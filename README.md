@@ -1,16 +1,22 @@
 ## License & Contribution
 
-**DaggerApp** is a free and open-source tool created for the Daggerheart community.  
+**DaggerApp** is a free and open-source tool created for the **Daggerheart** community.  
 It is licensed under the **GNU General Public License v3.0 (GPLv3)**.
 
 What this means:  
 - Anyone is free to use, share, and modify this tool.  
 - Any changes or improvements must remain free and open to the community under the same license.  
-- DaggerApp will always be a resource for Daggerheart Game Masters and players — built by the community, for the community.
+- **DaggerApp** will always be a resource for **Daggerheart** Game Masters and players built by the community, for the community.
 
-Contributions and improvements are always welcome!  
-If you’d like to help enhance this tool, feel free to submit a pull request or open an issue.
+The app includes all items, potions, weapons, and armor from the base **Daggerheart** rulebook.  
+All items referenced, as well as the background art, belong to **Darrington Press**.  
 
-Since this began as a personal project I’ve made public, I may not be very active on pull requests and issues, but I will check in from time to time.
+https://www.daggerheart.com/  
+https://darringtonpress.com/
+
+---  
+
+**DaggerApp** is a personal project, created in my limited free time.  
+While contributions and improvements are always welcome, I may not be quick on pull requests and issues.  
 
 *Note: This project was created with the assistance of ChatGPT, so it may not fully adhere to all industry standards or best practices.*
