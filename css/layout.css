@@ -1,6 +1,6 @@
 body {
   visibility: hidden; /* Hides the page until scaling is applied in main.js*/
-  font-family: Arial, sans-serif;
+  font-family: 'Cinzel', 'Georgia', sans-serif;
   margin: 15px;
   overflow: hidden;
   background-color: #121212;
@@ -27,22 +27,23 @@ body::before {
   top: 0;
   left: 0;
   width: 1080px;    /* same as your container width */
-  height: 770px;    /* same as your container height */
+  height: 690px;    /* same as your container height */
   transform-origin: top left;
   z-index: 1;
 }
 
 h1 {
   text-align: center;
-  margin-top: 0;
+  margin: 0 0 10px 0;
   color: #ffffffc0;
+  cursor: default;
 }
 
 /* Main container for the app */
 .container {
   position: relative;
   width: 1080px;
-  height: 770px;
+  height: 690px;
   border-radius: 12px;
   z-index: 1;
   color: #f0f0f0;

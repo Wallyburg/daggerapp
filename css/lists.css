@@ -17,6 +17,7 @@
   line-height: 1.5;
   background: rgba(30, 30, 30, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
   padding: 0.5rem 0.75rem;
   overflow-y: auto;
   color: #ffffffc0;

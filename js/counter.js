@@ -10,7 +10,7 @@ export function initCounters() {
       button.addEventListener("click", () => {
         let currentValue = Number(valueDisplay.textContent);
         let change = Number(button.getAttribute("data-value"));
-        let newValue = Math.max(0, currentValue + change);
+        let newValue = Math.min(Math.max(currentValue + change, 0), 99);
         valueDisplay.textContent = newValue;
       });
     });

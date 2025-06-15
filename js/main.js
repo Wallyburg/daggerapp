@@ -18,7 +18,7 @@ function scaleApp() {
   if (!app) return;
 
   const containerWidth = 1080;
-  const containerHeight = 770;
+  const containerHeight = 690;
 
   const scaleX = window.innerWidth / containerWidth;
   const scaleY = window.innerHeight / containerHeight;

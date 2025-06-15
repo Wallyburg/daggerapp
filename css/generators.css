@@ -19,6 +19,7 @@ select {
   background: #222;
   color: #f0f0f0;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
   transition: all 0.2s ease;
 }
 
@@ -33,6 +34,7 @@ select {
 .shop-results button {
   width: 30%;
   padding: 6px 0;
+  font-family: Arial, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
   cursor: pointer;
