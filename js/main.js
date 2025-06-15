@@ -6,7 +6,7 @@ import { initShop } from './shop.js';
 initInfoButtons();
 initCounters();
 
-const response = await fetch('../json/masterlist.json');
+const response = await fetch('/json/masterlist.json');
 const data = await response.json();
 
 initLoot(data);
