@@ -10,9 +10,10 @@ What this means:
 
 ##
 
-The app includes all items, potions, weapons, and armor from the base **Daggerheart** rulebook.  
-**Daggerheart**, and any referenced material, is the property of **Darrington Press**.  
+The app includes all base items, potions, weapons, and armor from the **Daggerheart** rulebook.  
+*Note: Does not include Campaign Frame specific content*
 
+**Daggerheart**, and any referenced material, is the property of **Darrington Press**.
 - https://www.daggerheart.com/  
 - https://darringtonpress.com/
 
