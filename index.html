@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DaggerApp</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/generators.css" />
+    <link rel="stylesheet" href="css/lists.css" />
+    <link rel="stylesheet" href="css/counters.css" />
+    <link rel="stylesheet" href="css/modals.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="container">
+        <!-- Welcome Section -->
+        <div class="section-box">
+          <h1>
+            Welcome to DaggerApp
+            <button class="info-btn" data-info="welcome">
+              <svg width="22" height="22" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="#FFD93D" />
+                <text x="12" y="17" text-anchor="middle" font-size="14" font-family="Arial" fill="#000" font-weight="bold">i</text>
+              </svg>
+            </button>
+          </h1>
+
+          <div class="intro">
+            <p>What started as a basic loot generator became a weird obsession. I may add more tabs if I get any other crazy ideas.</p>
+            <p>While it may function on mobile devices, it was designed with desktops/laptops in mind. I hope you enjoy!</p>
+          </div>
+
+          <div class="tabs">
+            <button class="tab-button active" data-tab="generator">Generators</button>
+            <button class="tab-button" data-tab="countdown">Countdowns</button>
+          </div>
+        </div>
+
+        <!-- Generator Section -->
+        <div id="generator" class="tab-content active">
+          <div class="section-box">
+            <h1>
+              Loot & Shop Generators
+              <button class="info-btn" data-info="loot">
+                <svg width="22" height="22" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" fill="#FFD93D" />
+                  <text x="12" y="17" text-anchor="middle" font-size="14" font-family="Arial" fill="#000" font-weight="bold">i</text>
+                </svg>
+              </button>
+            </h1>
+
+            <div class="gen-frame">
+              <!-- Loot Selection -->
+              <fieldset>
+                <div class="dropdown-row">
+                  <div class="dropdown-label">
+                    <label for="loot-dropdown">Select Loot Size</label>
+                  </div>
+                  <select id="loot-dropdown">
+                    <option value="1">Small</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Large</option>
+                    <option value="4">Hoard</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <!-- Tier Selection -->
+              <fieldset>
+                <div class="dropdown-row">
+                  <div class="dropdown-label">
+                    <label for="tier-dropdown">Select Tier</label>
+                  </div>
+                  <select id="tier-dropdown">
+                    <option value="1">Tier 1 (Level 1)</option>
+                    <option value="2">Tier 2 (Level 2-4)</option>
+                    <option value="3">Tier 3 (Level 5-7)</option>
+                    <option value="4">Tier 4 (Level 8-10)</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <!-- Shop Selection -->
+              <fieldset>
+                <div class="dropdown-row">
+                  <div class="dropdown-label">
+                    <label for="shop-dropdown">Select Shop Type</label>
+                  </div>
+                  <select id="shop-dropdown">
+                    <option value="1">Items</option>
+                    <option value="2">Potions</option>
+                    <option value="3">Armor</option>
+                    <option value="4">Magic Weapons</option>
+                    <option value="5">Physical Weapons</option>
+                    <option value="6">Secondary Weapons</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <!-- Loot Listbox -->
+              <fieldset class="loot-results" id="loot-results">
+                <div class="results-btn-group">
+                  <button id="roll-loot-btn" type="button">Roll Loot</button>
+                  <button id="clear-loot-list" type="button">Clear List</button>
+                </div>
+                <pre class="listbox" id="loot-listbox"></pre>
+              </fieldset>
+
+              <!-- Shop Listbox -->
+              <fieldset class="shop-results" id="shop-results">
+                <div class="results-btn-group">
+                  <button id="roll-shop-btn" type="button">Roll Shop</button>
+                  <button id="clear-shop-list" type="button">Clear List</button>
+                </div>
+                <pre class="listbox" id="shop-listbox"></pre>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <!-- Countdown Section -->
+        <div id="countdown" class="tab-content">
+          <div class="section-box">
+            <h1>
+              Countdowns
+              <button class="info-btn" data-info="countdowns">
+                <svg width="22" height="22" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" fill="#FFD93D" />
+                  <text x="12" y="17" text-anchor="middle" font-size="14" font-family="Arial" fill="#000" font-weight="bold">i</text>
+                </svg>
+              </button>
+            </h1>
+
+            <div class="counter-frame">
+              <!-- Countdown A -->
+              <div class="counter-box">
+                <h3>Countdown A</h3>
+                <div class="counter-value" id="progress-value">0</div>
+                <div class="counter-buttons">
+                  <button class="counter-btn-3" data-value="-3">-3</button>
+                  <button class="counter-btn-2" data-value="-2">-2</button>
+                  <button class="counter-btn-1" data-value="-1">-1</button>
+                  <button class="counter-btn-purple-1" data-value="1">+1</button>
+                  <button class="counter-btn-purple-2" data-value="2">+2</button>
+                  <button class="counter-btn-purple-3" data-value="3">+3</button>
+                </div>
+                <button class="reset-btn">Reset</button>
+              </div>
+
+              <!-- Countdown B -->
+              <div class="counter-box">
+                <h3>Countdown B</h3>
+                <div class="counter-value" id="consequence-value">0</div>
+                <div class="counter-buttons">
+                  <button class="counter-btn-3" data-value="-3">-3</button>
+                  <button class="counter-btn-2" data-value="-2">-2</button>
+                  <button class="counter-btn-1" data-value="-1">-1</button>
+                  <button class="counter-btn-purple-1" data-value="1">+1</button>
+                  <button class="counter-btn-purple-2" data-value="2">+2</button>
+                  <button class="counter-btn-purple-3" data-value="3">+3</button>
+                </div>
+                <button class="reset-btn">Reset</button>
+              </div>
+
+              <!-- Countdown C -->
+              <div class="counter-box">
+                <h3>Countdown C</h3>
+                <div class="counter-value" id="countdown-c-value">0</div>
+                <div class="counter-buttons">
+                  <button class="counter-btn-3" data-value="-3">-3</button>
+                  <button class="counter-btn-2" data-value="-2">-2</button>
+                  <button class="counter-btn-1" data-value="-1">-1</button>
+                  <button class="counter-btn-purple-1" data-value="1">+1</button>
+                  <button class="counter-btn-purple-2" data-value="2">+2</button>
+                  <button class="counter-btn-purple-3" data-value="3">+3</button>
+                </div>
+                <button class="reset-btn">Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

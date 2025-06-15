@@ -1,0 +1,170 @@
+.counter-box {
+  background: rgba(50, 50, 50, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 15px 20px;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.counter-box h3 {
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.counter-value {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.counter-buttons button {
+  width: 40px;
+  padding: 6px 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #000;
+  color: #000;
+  transition: background 0.2s, color 0.2s, transform 0.05s;
+}
+
+/* Shared styles for all intensity buttons */
+.counter-btn-1,
+.counter-btn-2,
+.counter-btn-3,
+.counter-btn-purple-1,
+.counter-btn-purple-2,
+.counter-btn-purple-3 {
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.counter-btn-1:hover,
+.counter-btn-2:hover,
+.counter-btn-3:hover,
+.counter-btn-purple-1:hover,
+.counter-btn-purple-2:hover,
+.counter-btn-purple-3:hover {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 30%, rgba(255, 255, 255, 0) 60%);
+}
+
+.counter-btn-1:active,
+.counter-btn-2:active,
+.counter-btn-3:active,
+.counter-btn-purple-1:active,
+.counter-btn-purple-2:active,
+.counter-btn-purple-3:active {
+  transform: scale(0.97);
+}
+
+/* Yellow intensity buttons */
+.counter-btn-3 {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 60%),
+    #FFD93D;
+  border-color: #e6cc35;
+}
+.counter-btn-3:hover {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 30%, rgba(255, 255, 255, 0) 60%),
+    #ffea80;
+}
+
+.counter-btn-2 {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 60%),
+    #FFCA3A;
+  border-color: #d4b22f;
+}
+.counter-btn-2:hover {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 30%, rgba(255, 255, 255, 0) 60%),
+    #ffd54d;
+}
+
+.counter-btn-1 {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 60%),
+    #FFC300;
+  border-color: #c9a919;
+}
+.counter-btn-1:hover {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 30%, rgba(255, 255, 255, 0) 60%),
+    #ffda3a;
+}
+
+/* Purple intensity buttons */
+.counter-btn-purple-3 {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 60%),
+    #8735cf;
+  border-color: #6926a8;
+}
+.counter-btn-purple-3:hover {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 30%, rgba(255, 255, 255, 0) 60%),
+    #a063ff;
+}
+
+.counter-btn-purple-2 {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 60%),
+    #9a50d6;
+  border-color: #8541bb;
+}
+.counter-btn-purple-2:hover {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 30%, rgba(255, 255, 255, 0) 60%),
+    #bb82ff;
+}
+
+.counter-btn-purple-1 {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 60%),
+    #ac66fc;
+  border-color: #a379cc;
+}
+.counter-btn-purple-1:hover {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 30%, rgba(255, 255, 255, 0) 60%),
+    #d09bfd;
+}
+
+/* Reset button */
+.reset-btn {
+  width: 50%;
+  padding: 6px 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 6px;
+  margin: 12px auto 0;
+  display: block;
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 60%),
+    linear-gradient(90deg, #FFD93D 0%, #8735cf 100%);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reset-btn:hover {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 30%, rgba(255, 255, 255, 0) 60%),
+    linear-gradient(90deg, #ffea80 0%, #a063ff 100%);
+}
+.reset-btn:active {
+  transform: scale(0.97);
+}

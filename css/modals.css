@@ -1,0 +1,128 @@
+/* Info button */
+.info-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: filter 0s ease;
+}
+
+.info-btn:hover svg circle {
+  filter: brightness(1.2);
+  fill: #8735cf;
+}
+
+/* Info popup */
+.info-popup {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  max-width: 1200px;
+  z-index: 1000;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.info-popup::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  margin-top: -6px;
+  border: 6px solid transparent;
+  border-right-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Modal content */
+.modal-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: #f0f0f0;
+  border-radius: 10px;
+  max-width: 1080px;
+  max-height: 80vh;
+  overflow: hidden;
+  padding: 20px 25px;
+  text-align: left;
+  box-shadow: 0 0 200px 400px rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  background: none;
+}
+
+.modal-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(135, 53, 207, 0.8) 0%,
+      rgba(196, 135, 144, 0.6) 50%,
+      rgba(255, 217, 61, 0.7) 100%
+    ),
+    #0c0c0c;
+  filter: brightness(0.7);
+  z-index: -1;
+}
+
+/* Modal scrollable content */
+.modal-scrollable-content {
+  overflow-y: auto;
+  max-height: calc(80vh - 40px);
+  padding-right: 10px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  flex-grow: 1;
+}
+
+/* Modal and overlay active states */
+.modal-overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-content.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #f0f0f0;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0s ease;
+}
+
+.close-btn:hover {
+  color: #f0f0f07e;
+}

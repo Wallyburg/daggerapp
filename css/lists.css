@@ -1,0 +1,125 @@
+/* Shared result containers */
+.loot-results,
+.shop-results {
+  position: relative;
+  flex: 1;
+  width: 50%;
+  background: rgba(50, 50, 50, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+
+/* Listbox styling */
+.listbox {
+  width: 100%;
+  min-height: 260px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+  background: rgba(30, 30, 30, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 0.75rem;
+  overflow-y: auto;
+  color: #ffffffc0;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+/* List items */
+.listbox li {
+  padding: 1px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listbox li:last-child {
+  border-bottom: none;
+}
+
+.listbox li:not(.loot-header):not(.shop-header):hover {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 30%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    #8735cf;
+  color: #000000c0;
+  cursor: default;
+}
+
+/* Tooltip overlay */
+.tooltip-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 900;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip-overlay.show {
+  opacity: 1;
+}
+
+/* Tooltip box */
+.tooltip {
+  position: absolute;
+  white-space: pre-wrap;
+  border: 1px solid #000;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 30%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    #FFD93D;
+  color: #000;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  max-width: 460px;
+  max-height: 250px;
+  box-sizing: border-box;
+  overflow: auto;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1000;
+  margin: 0;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+/* List headers */
+.shop-header,
+.loot-header {
+  font-weight: bold;
+  color: #ffd83dc0;
+  padding: 5px 0;
+  background: none;
+  cursor: default;
+}
+
+.shop-header:not(:first-child),
+.loot-header:not(:first-child) {
+  margin-top: 5px;
+}
+
+/* Category lists */
+.shop-category-list,
+.loot-category-list {
+  list-style: none;
+  padding-left: 15px;
+  margin: 1px 0 0;
+}

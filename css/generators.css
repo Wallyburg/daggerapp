@@ -1,0 +1,102 @@
+.dropdown-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #f0f0f0;
+}
+
+.dropdown-row {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  gap: 6px;
+}
+
+select {
+  font-size: 0.9em;
+  padding: 4px 6px;
+  background: #222;
+  color: #f0f0f0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.results-btn-group {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.loot-results button,
+.shop-results button {
+  width: 30%;
+  padding: 6px 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+#roll-loot-btn,
+#roll-shop-btn {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 30%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    #FFD93D;
+  color: #000;
+}
+
+#roll-loot-btn:hover,
+#roll-shop-btn:hover {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.25) 30%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    #ffea80;
+}
+
+#roll-loot-btn:active,
+#roll-shop-btn:active {
+  transform: scale(0.97);
+}
+
+#clear-loot-list,
+#clear-shop-list {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 30%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    #8735cf;
+  color: #000000;
+}
+
+#clear-loot-list:hover,
+#clear-shop-list:hover {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.25) 30%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    #a063ff;
+}
+
+#clear-loot-list:active,
+#clear-shop-list:active {
+  transform: scale(0.97);
+}
+
+#loot-listbox,
+#shop-listbox {
+  position: relative;
+}
