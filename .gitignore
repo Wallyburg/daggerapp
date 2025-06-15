@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+*.bak
+*.swp
+.vscode/
+.idea/
+node_modules/
+__pycache__/
+*.pyc
+._*
+ehthumbs.db
