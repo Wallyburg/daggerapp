@@ -36,12 +36,13 @@ function scaleApp() {
 window.addEventListener('resize', scaleApp);
 window.addEventListener('load', scaleApp);
 
-scaleApp(); // Initial scaling on load
+// Call function to scale on first time page load
+scaleApp();
 
-// Show body after scaling to prevent flicker
+// Show body after scaling to prevent flicker (Hidden in CSS by default)
 document.body.style.visibility = 'visible';
 
-// Tab Setup
+// Tab Setup and Cycling
 document.querySelectorAll('.tab-button').forEach(button => {
   button.addEventListener('click', () => {
     document.querySelectorAll('.tab-button.active').forEach(btn => btn.classList.remove('active'));

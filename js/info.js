@@ -25,7 +25,6 @@ export function initInfoButtons() {
 
   // Info message library
   const infoMessages = {
-    //Welcome
     welcome: `License & Contribution
 
     DaggerApp is a free and open-source tool created for the Daggerheart community.  
@@ -39,9 +38,10 @@ export function initInfoButtons() {
 
     ---
 
-    The app includes all items, potions, weapons, and armor from the base Daggerheart rulebook.  
+    The app includes all base items, potions, weapons, and armor from the Daggerheart rulebook.
+    *Note: Does not include Campaign Frame specific content*
+    
     Daggerheart, and any referenced material, is the property of Darrington Press.
-
       - https://www.daggerheart.com/
       - https://darringtonpress.com/
 
@@ -51,7 +51,6 @@ export function initInfoButtons() {
     While contributions and improvements are always welcome, I may not be quick on pull requests and issues.`,
     //End Welcome
 
-    //Loot
     loot: `Loot Generator
     
     Rolls random items, potions, weapons, or armor from the Daggerheart rulebook.
@@ -101,7 +100,6 @@ Shop Generator
     Hover over list items to view tooltips.`,
     //End Loot
 
-    //Countdowns
     countdowns: `Countdowns
     
     This section is for keeping track of various countdowns mentioned in the Daggerheart rulebook.

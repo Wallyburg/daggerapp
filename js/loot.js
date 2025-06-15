@@ -3,12 +3,12 @@ export function initLoot(data) {
   const lootButton = document.getElementById("roll-loot-btn");
   const clearButton = document.getElementById("clear-loot-list");
 
-  // Create overlay element and append to shop-results
+  // Create overlay and append to shop-results
   const overlay = document.createElement("div");
   overlay.classList.add("tooltip-overlay");
   document.getElementById("shop-results").appendChild(overlay);
   
-  // Create tooltip element and append to shop listbox
+  // Create tooltip and append to shop listbox
   const tooltip = document.createElement("div");
   tooltip.classList.add("tooltip");
   document.getElementById("shop-results").appendChild(tooltip);
@@ -17,15 +17,15 @@ export function initLoot(data) {
     tooltip.textContent = text;
     tooltip.style.left = `20px`;
     tooltip.style.top = `65px`;
-    tooltip.classList.add("show");       // show tooltip
-    overlay.classList.add("show");       // show overlay
+    tooltip.classList.add("show");
+    overlay.classList.add("show");
     tooltip.style.opacity = "1";
   }
 
   function hideTooltip() {
     tooltip.style.opacity = "0";
-    tooltip.classList.remove("show");       // show tooltip
-    overlay.classList.remove("show");       // show overlay
+    tooltip.classList.remove("show");
+    overlay.classList.remove("show");
   }
 
   // Add to listbox and bind tooltips
@@ -33,6 +33,8 @@ export function initLoot(data) {
     const li = document.createElement("li");
     let tooltipText = "";
 
+    // Armor, Items/Potions, Weapons all have different JSON keys
+    // Change tooltips based on those keys
     if ("Thresholds" in item) {
       tooltipText = `Tier: ${item.Tier}
 Armor: ${item.Score}
@@ -73,6 +75,7 @@ ${item.Description}`;
   });
 
   // Dice roller helper with ±1 modifier clamped between 1 and 60
+  // This is for rolling Items and Potions
   function rollDice(numDice, sides) {
     let total = 0;
     for (let i = 0; i < numDice; i++) {
@@ -83,6 +86,7 @@ ${item.Description}`;
   }
 
   // Main button logic
+  // Pulls random drops from JSON based on selected dropdown options
   lootButton.addEventListener("click", () => {
     lootList.innerHTML = "";
     const lootSize = parseInt(document.getElementById("loot-dropdown").value, 10);
@@ -113,6 +117,8 @@ ${item.Description}`;
 
       let selectedItem = null;
 
+      // Some drops pull based on Tier selected
+      // Others pull based on a Roll table
       if (groupInfo.type === "tiered") {
         const filtered = selectedTier === "Any"
           ? groupItems
@@ -120,7 +126,6 @@ ${item.Description}`;
         if (filtered.length) {
           selectedItem = filtered[Math.floor(Math.random() * filtered.length)];
         }
-
       } else if (groupInfo.type === "roll") {
         const rollResult = rollDice(numDice, 12);
         const matches = groupItems.filter(item => parseInt(item.Roll, 10) === rollResult);
@@ -157,10 +162,11 @@ ${item.Description}`;
     goldUl.classList.add("loot-category-list");
     lootList.appendChild(goldUl);
 
+    // 1d4 per lootSize * tier
     function rollGold(lootSize, tier) {
       let total = 0;
       for (let i = 0; i < lootSize; i++) {
-        total += Math.floor(Math.random() * 4) + 1; // 1d4 per lootSize
+        total += Math.floor(Math.random() * 4) + 1;
       }
       return total * tier;
     }
@@ -175,7 +181,9 @@ ${item.Description}`;
     function addGoldLine(amount, unit) {
       if (amount > 0) {
         const li = document.createElement("li");
-        li.textContent = `${amount} ${unit} of Gold`;
+        // remove 's' if singular (1 Handful vs 2 Handfuls)
+        const unitText = amount === 1 ? unit.slice(0, -1) : unit;
+        li.textContent = `${amount} ${unitText} of Gold`;
         goldUl.appendChild(li);
 
         const tooltipText = "10 Handfuls = 1 Bag\n10 Bags = 1 Chest";

@@ -36,7 +36,6 @@
   border-radius: 4px;
   border: 1px solid #000;
   color: #000;
-  transition: background 0.2s, color 0.2s, transform 0.05s;
 }
 
 /* Shared styles for all intensity buttons */
@@ -47,7 +46,6 @@
 .counter-btn-purple-2,
 .counter-btn-purple-3 {
   border-radius: 4px;
-  transition: background 0.3s ease;
 }
 
 .counter-btn-1:hover,
@@ -157,7 +155,6 @@
   background:
     linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 60%),
     linear-gradient(90deg, #FFD93D 0%, #8735cf 100%);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .reset-btn:hover {

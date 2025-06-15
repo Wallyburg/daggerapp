@@ -3,12 +3,12 @@ export function initShop(data) {
   const shopButton = document.getElementById("roll-shop-btn");
   const clearButton = document.getElementById("clear-shop-list");
 
-  // Create overlay element and append to shop-results
+  // Create overlay and append to shop-results
   const overlay = document.createElement("div");
   overlay.classList.add("tooltip-overlay");
   document.getElementById("loot-results").appendChild(overlay);
   
-  // Create tooltip element and append to loot listbox
+  // Create tooltip and append to loot listbox
   const tooltip = document.createElement("div");
   tooltip.classList.add("tooltip");
   document.getElementById("loot-results").appendChild(tooltip);
@@ -17,15 +17,15 @@ export function initShop(data) {
     tooltip.textContent = text;
     tooltip.style.left = `20px`;
     tooltip.style.top = `65px`;
-    tooltip.classList.add("show");       // show tooltip
-    overlay.classList.add("show");       // show overlay
+    tooltip.classList.add("show");
+    overlay.classList.add("show");
     tooltip.style.opacity = "1";
   }
 
   function hideTooltip() {
     tooltip.style.opacity = "0";
-    tooltip.classList.remove("show");       // show tooltip
-    overlay.classList.remove("show");       // show overlay
+    tooltip.classList.remove("show");
+    overlay.classList.remove("show");
   }
 
   // Add to listbox and bind tooltips
@@ -33,6 +33,8 @@ export function initShop(data) {
     const li = document.createElement("li");
     let tooltipText = "";
 
+    // Armor, Items/Potions, Weapons all have different JSON keys
+    // Change tooltips based on those keys
     if ("Thresholds" in item) {
       tooltipText = `Tier: ${item.Tier}
 Armor: ${item.Score}
@@ -73,16 +75,18 @@ ${item.Description}`;
   });
 
   // Dice roller helper with ±1 modifier clamped between 1 and 60
+  // This is for rolling Items and Potions
   function rollDice(numDice, sides) {
     let total = 0;
     for (let i = 0; i < numDice; i++) {
       total += Math.floor(Math.random() * sides) + 1;
     }
     total += Math.random() < 0.5 ? -1 : 1;
-    return Math.max(1, Math.min(total, 60));
+    return Math.min(Math.max(total, 1), 60);
   }
 
   // Main button logic
+  // Fills shop with drops from JSON based on dropdown selections
   shopButton.addEventListener("click", () => {
     shopList.innerHTML = "";
     const shopType = parseInt(document.getElementById("shop-dropdown").value, 10) - 1;
@@ -131,6 +135,8 @@ ${item.Description}`;
 
     let totalItemsAdded = 0;
 
+    // Some drops pull based on Tier selected
+    // Others pull based on a Roll table
     if (selectedGroup.type === "tiered") {
       for (const [tier, count] of Object.entries(countMap)) {
         const tierItems = selectedTier === "Any"
