@@ -612,7 +612,7 @@
       "Range": "Far",
       "Damage": "d6",
       "Burden": "2H",
-      "Feature": "Presence, Melee, d8."
+      "Feature": "Versatile: This weapon can also be used with these statistics - Presence, Melee, d8."
     },
     {
       "Tier": "1",
@@ -702,7 +702,7 @@
       "Range": "Far",
       "Damage": "d6+3",
       "Burden": "2H",
-      "Feature": "Presence, Melee, d8+3."
+      "Feature": "Versatile: This weapon can also be used with these statistics - Presence, Melee, d8+3."
     },
     {
       "Tier": "2",
@@ -738,7 +738,7 @@
       "Range": "Melee",
       "Damage": "d10+4",
       "Burden": "2H",
-      "Feature": "Knowledge, Far, d6+3."
+      "Feature": "Versatile: This weapon can also be used with these statistics - Knowledge, Far, d6+3."
     },
     {
       "Tier": "2",
@@ -756,7 +756,7 @@
       "Range": "Melee",
       "Damage": "d8+6",
       "Burden": "2H",
-      "Feature": "all other adversaries within Very Close range must succeed on a reaction roll (14) or take half damage."
+      "Feature": "Eruptive: On a successful attack against a target within Melee range, all other adversaries within Very Close range must succeed on a reaction roll (14) or take half damage."
     },
     {
       "Tier": "2",
@@ -783,7 +783,7 @@
       "Range": "Far",
       "Damage": "d6+3",
       "Burden": "1H",
-      "Feature": "On a result of 4, clear a Stress."
+      "Feature": "Invigorating: On a successful attack, roll a d4. \nOn a result of 4, clear a Stress."
     },
     {
       "Tier": "2",
@@ -873,7 +873,7 @@
       "Range": "Far",
       "Damage": "d6+6",
       "Burden": "2H",
-      "Feature": "Presence, Melee, d8+4."
+      "Feature": "Versatile: This weapon can also be used with these statistics - Presence, Melee, d8+4."
     },
     {
       "Tier": "3",
@@ -972,7 +972,7 @@
       "Range": "Very Far",
       "Damage": "d6+6",
       "Burden": "1H",
-      "Feature": "On a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+      "Feature": "Reloading: After you make an attack, roll a d6. \nOn a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
     },
     {
       "Tier": "4",
@@ -1044,7 +1044,7 @@
       "Range": "Far",
       "Damage": "d6+9",
       "Burden": "2H",
-      "Feature": "Presence, Melee, d8+6."
+      "Feature": "Feature: Versatile: This weapon can also be used with these statistics - Presence, Melee, d8+6."
     },
     {
       "Tier": "4",
@@ -1080,7 +1080,7 @@
       "Range": "Melee",
       "Damage": "d10+9",
       "Burden": "2H",
-      "Feature": "On a result of 6, clear a Hit Point or clear a Stress."
+      "Feature": "Lifestealing: On a successful attack, roll a d6. \nOn a result of 6, clear a Hit Point or clear a Stress."
     },
     {
       "Tier": "4",
@@ -1134,7 +1134,7 @@
       "Range": "Very Far",
       "Damage": "d6+13",
       "Burden": "1H",
-      "Feature": "On a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+      "Feature": "Reloading: After you make an attack, roll a d6. \nOn a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
     },
     {
       "Tier": "4",
@@ -1478,7 +1478,7 @@
       "Range": "Close",
       "Damage": "d8+6",
       "Burden": "2H",
-      "Feature": "On a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+      "Feature": "Reloading: After you make an attack, roll a d6. \nOn a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
     },
     {
       "Tier": "2",
@@ -1712,7 +1712,7 @@
       "Range": "Far",
       "Damage": "d6+8",
       "Burden": "1H",
-      "Feature": "On a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+      "Feature": "Reloading: After you make an attack, roll a d6. \nOn a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
     },
     {
       "Tier": "3",
@@ -1721,7 +1721,7 @@
       "Range": "Very Far",
       "Damage": "d6+7",
       "Burden": "2H",
-      "Feature": "Versatile: This weapon can also be used with these statisticsAgility, Melee, d10+5."
+      "Feature": "Versatile: This weapon can also be used with these statistics - Agility, Melee, d10+5."
     },
     {
       "Tier": "4",
@@ -1937,7 +1937,7 @@
       "Range": "Very Far",
       "Damage": "d6+12",
       "Burden": "1H",
-      "Feature": "On a 1, you must mark a Stress to reload this weapon before you can fire it again."
+      "Feature": "Reloading: After you make an attack, roll a d6. \nOn a 1, you must mark a Stress to reload this weapon before you can fire it again."
     }
   ],
   "potions": [
