@@ -154,7 +154,7 @@ ${item.Description}`;
 
     // Gold drop header and list
     const goldHeader = document.createElement("li");
-    goldHeader.textContent = "Gold Drop";
+    goldHeader.textContent = "Gold";
     goldHeader.classList.add("loot-header");
     lootList.appendChild(goldHeader);
 
