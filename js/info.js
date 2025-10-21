@@ -38,7 +38,7 @@ export function initInfoButtons() {
 
     ---
 
-    The app includes all base items, potions, weapons, and armor from the Daggerheart rulebook.
+    The app includes all base items, consumables, weapons, and armor from the Daggerheart rulebook.
     *Note: Does not include Campaign Frame specific content*
     
     Daggerheart, and any referenced material, is the property of Darrington Press.
@@ -53,7 +53,7 @@ export function initInfoButtons() {
 
     loot: `Loot Generator
     
-    Rolls random items, potions, weapons, or armor from the Daggerheart rulebook.
+    Rolls random items, consumables, weapons, or armor from the Daggerheart rulebook.
     It will also generate a gold drop depending on loot size and tier selected.
 
       -Small: One drop from selected tier and (1d4 x tier) handfuls of gold
@@ -70,7 +70,7 @@ export function initInfoButtons() {
 Tier Selection
     
     Armor and weapons will roll from the selected tier.
-    Items and potions roll on the tables in the Daggerheart rulebook.
+    Items and consumables roll on the tables in the Daggerheart rulebook.
 
       -Tier 1: 2d12 plus or minus 1
       -Tier 2: 3d12 plus or minus 1

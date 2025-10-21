@@ -33,7 +33,7 @@ export function initLoot(data) {
     const li = document.createElement("li");
     let tooltipText = "";
 
-    // Armor, Items/Potions, Weapons all have different JSON keys
+    // Armor, Items/Consumables, Weapons all have different JSON keys
     // Change tooltips based on those keys
     if ("Thresholds" in item) {
       tooltipText = `Tier: ${item.Tier}
@@ -75,7 +75,7 @@ ${item.Description}`;
   });
 
   // Dice roller helper with ±1 modifier clamped between 1 and 60
-  // This is for rolling Items and Potions
+  // This is for rolling Items and Consumables
   function rollDice(numDice, sides) {
     let total = 0;
     for (let i = 0; i < numDice; i++) {
@@ -93,12 +93,12 @@ ${item.Description}`;
     const selectedTier = document.getElementById("tier-dropdown").value;
 
     const allGroups = [
-      { name: "armor", type: "tiered", header: "Armor & Weapons" },
-      { name: "magic", type: "tiered", header: "Armor & Weapons" },
-      { name: "physical", type: "tiered", header: "Armor & Weapons" },
-      { name: "secondary", type: "tiered", header: "Armor & Weapons" },
-      { name: "items", type: "roll", header: "Items & Potions" },
-      { name: "potions", type: "roll", header: "Items & Potions" },
+      { name: "Armor", type: "tiered", header: "Armor & Weapons" },
+      { name: "Magic", type: "tiered", header: "Armor & Weapons" },
+      { name: "Physical", type: "tiered", header: "Armor & Weapons" },
+      { name: "Secondary", type: "tiered", header: "Armor & Weapons" },
+      { name: "Items", type: "roll", header: "Items & Consumables" },
+      { name: "Consumables", type: "roll", header: "Items & Consumables" },
     ];
 
     const tierDiceMap = { "1": 2, "2": 3, "3": 4, "4": 5 };

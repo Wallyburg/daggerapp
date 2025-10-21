@@ -1,5 +1,5 @@
 {
-  "armor": [
+  "Armor": [
     {
       "Tier": "1",
       "Name": "Gambeson Armor",
@@ -239,7 +239,7 @@
       "Score": "8"
     }
   ],
-  "items": [
+  "Items": [
     {
       "Roll": "1",
       "Loot": "Premium Bedroll",
@@ -541,7 +541,7 @@
       "Description": "Once per session, you can spend 5 Hope to lead a Tag Team Roll with three PCs instead of two."
     }
   ],
-  "magic": [
+  "Magic": [
     {
       "Tier": "1",
       "Name": "Arcane Gauntlets",
@@ -1146,7 +1146,7 @@
       "Feature": "Bonded: Gain a bonus to your damage rolls equal to your level."
     }
   ],
-  "physical": [
+  "Physical": [
     {
       "Tier": "1",
       "Name": "Broadsword",
@@ -1940,7 +1940,7 @@
       "Feature": "Reloading: After you make an attack, roll a d6. \nOn a 1, you must mark a Stress to reload this weapon before you can fire it again."
     }
   ],
-  "potions": [
+  "Consumables": [
     {
       "Roll": "1",
       "Loot": "Stride Potion",
@@ -2242,7 +2242,7 @@
       "Description": "You can use this stardrop to summon a hailstorm of comets that deals 8d20 physical damage to all targets within Very Far range."
     }
   ],
-  "secondary": [
+  "Secondary": [
     {
       "Tier": "1",
       "Name": "Shortsword",
