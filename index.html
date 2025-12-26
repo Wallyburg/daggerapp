@@ -191,7 +191,7 @@
         <div id="content" class="tab-content">
           <div class="section-box">
             <h1>
-              Optional Content
+              Content Selection
               <button class="info-btn" data-info="content">
                 <svg width="22" height="22" viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="10" fill="#FFD93D" />
@@ -201,6 +201,19 @@
             </h1>
 
             <div class="content-frame two-column">
+              <!-- Expansions Column -->
+              <fieldset class="content-column">
+                <h3>Expansions</h3>
+                <label>
+                  <input type="checkbox" id="expansion1-json" checked>
+                  Daggerheart: Base Game
+                </label>
+                <label>
+                  <input type="checkbox" id="expansion1-json" disabled>
+                  Daggerheart: Hope & Fear <span style="color: #c93737;">(Coming Summer 2026)</span>
+                </label>
+              </fieldset>
+
               <!-- Campaign Frames Column -->
               <fieldset class="content-column">
                 <h3>Campaign Frames</h3>
@@ -212,36 +225,7 @@
                   <input type="checkbox" id="extras-json">
                   Colossus of the Drylands
                 </label>
-                <label>
-                  <input type="checkbox" id="extras-json">
-                  Dungeons of Drakkenheim
-                </label>
-                <label>
-                  <input type="checkbox" id="extras-json">
-                  Five Banners Burning
-                </label>
-                <label>
-                  <input type="checkbox" id="extras-json">
-                  Motherboard
-                </label>
-                <label>
-                  <input type="checkbox" id="extras-json">
-                  The Age of Umbra
-                </label>
-                <label>
-                  <input type="checkbox" id="extras-json">
-                  The Witherwild
-                </label>
-              </fieldset>
-
-              <!-- Expansions Column -->
-              <fieldset class="content-column">
-                <h3>Expansions</h3>
-                <label>
-                  <input type="checkbox" id="expansion1-json" disabled>
-                  Daggerheart: Hope & Fear <span style="color: #c93737;">(Coming Summer 2026)</span>
-                </label>
-              </fieldset>
+              </fieldset>              
             </div>
           </div>
         </div>

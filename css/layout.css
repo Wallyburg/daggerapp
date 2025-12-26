@@ -180,7 +180,7 @@ legend {
 /* Two-column layout for Content tab with fieldsets */
 .content-frame.two-column {
   display: flex;
-  gap: 20px; /* space between columns */
+  gap: 15px; /* space between columns */
 }
 
 .content-column {

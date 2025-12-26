@@ -37,9 +37,6 @@ export function initInfoButtons() {
       - DaggerApp will always be a free resource for Daggerheart Game Masters and players.
 
     ---
-
-    The app includes all base items, consumables, weapons, and armor from the Daggerheart rules.
-    See the "Content" tab to enable additional Campaign Frame and Expansion content.
     
     Daggerheart, and any referenced material, is the property of Darrington Press.
       - https://www.daggerheart.com/
@@ -111,12 +108,13 @@ Shop Generator
     See the official Daggerheart rules for more information on using countdowns.`,
     //End Countdowns
 
-    content: `Optional Content
+    content: `Content
     
     All content from the base game is included in the generators by default.    
-    From here, you can select additional content you'd like to include by checking the boxes.
+    You can choose the content you'd like to include by checking the boxes.
     
-    See the official Daggerheart rules for specific items included in each campaign frame or expansion.`
+    Not all campaign frames contain additional items.
+    See the official Daggerheart rules for more details.`
     //End Content
   };
 
