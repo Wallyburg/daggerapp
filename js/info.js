@@ -38,8 +38,8 @@ export function initInfoButtons() {
 
     ---
 
-    The app includes all base items, consumables, weapons, and armor from the Daggerheart rulebook.
-    *Note: Does not include Campaign Frame specific content*
+    The app includes all base items, consumables, weapons, and armor from the Daggerheart rules.
+    See the "Content" tab to enable additional Campaign Frame and Expansion content.
     
     Daggerheart, and any referenced material, is the property of Darrington Press.
       - https://www.daggerheart.com/
@@ -53,7 +53,7 @@ export function initInfoButtons() {
 
     loot: `Loot Generator
     
-    Rolls random items, consumables, weapons, or armor from the Daggerheart rulebook.
+    Rolls random items, consumables, weapons, or armor from the Daggerheart rules.
     It will also generate a gold drop depending on loot size and tier selected.
 
       -Small: One drop from selected tier and (1d4 x tier) handfuls of gold
@@ -70,7 +70,7 @@ export function initInfoButtons() {
 Tier Selection
     
     Armor and weapons will roll from the selected tier.
-    Items and consumables roll on the tables in the Daggerheart rulebook.
+    Items and consumables roll on the tables in the Daggerheart rules.
 
       -Tier 1: 2d12 plus or minus 1
       -Tier 2: 3d12 plus or minus 1
@@ -84,7 +84,7 @@ Tier Selection
 
 Shop Generator
     
-    Rolls random lists from the Daggerheart rulebook based on tier and shop type.
+    Rolls random lists from the Daggerheart rules based on tier and shop type.
     Nine entries from the selected category are displayed and can contain duplicates.
 
     As tier increases, two of those entries are replaced by items of a higher tier.
@@ -102,14 +102,22 @@ Shop Generator
 
     countdowns: `Countdowns
     
-    This section is for keeping track of various countdowns mentioned in the Daggerheart rulebook.
+    This section is for keeping track of various countdowns mentioned in the Daggerheart rules.
     For convenience, I've included three separate trackers in case there are multiple countdowns active at once.
     
     Use the plus or minus buttons to increase or decrease the countdowns.
     The reset button will return the counter to zero.
     
-    See the official Daggerheart rulebook for more information on using countdowns.`
+    See the official Daggerheart rules for more information on using countdowns.`,
     //End Countdowns
+
+    content: `Optional Content
+    
+    All content from the base game is included in the generators by default.    
+    From here, you can select additional content you'd like to include by checking the boxes.
+    
+    See the official Daggerheart rules for specific items included in each campaign frame or expansion.`
+    //End Content
   };
 
   // Button click handlers

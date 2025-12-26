@@ -176,3 +176,28 @@ legend {
   pointer-events: auto;
   transform: translateX(0);
 }
+
+/* Two-column layout for Content tab with fieldsets */
+.content-frame.two-column {
+  display: flex;
+  gap: 20px; /* space between columns */
+}
+
+.content-column {
+  flex: 1; /* equal width columns */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+.content-column h3 {
+  margin: 5px;
+  color:#FFD93D;
+}
+
+/* Make checkboxes purple */
+.content-frame input[type="checkbox"] {
+  accent-color: #8735cf; /* Checked color */
+}
+
