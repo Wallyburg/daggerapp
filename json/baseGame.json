@@ -916,7 +916,7 @@
       "Name": "Ghostblade",
       "Trait": "Presence",
       "Range": "Melee",
-      "Damage": "d10+7 phy or",
+      "Damage": "d10+7",
       "Burden": "1H",
       "Feature": "Otherworldly: On a successful attack, you can deal physical or magic damage."
     },

@@ -90,10 +90,26 @@ ${item.Description}`
     const shopType = parseInt($("shop-dropdown").value, 10) - 1;
     const selectedTier = $("tier-dropdown").value;
     const group = ALL_GROUPS[shopType];
-    if (!group) return alert("Invalid shop type selected!");
+
+    // Invalid shop type
+    if (!group) {
+      const li = document.createElement("li");
+      li.textContent = "Invalid shop type selected!";
+      li.classList.add("shop-header");
+      shopList.appendChild(li);
+      return;
+    }
 
     const items = data[group.name] || [];
-    if (!items.length) return alert("No items available in this category!");
+
+    // No items in this category
+    if (!items.length) {
+      const li = document.createElement("li");
+      li.textContent = `No additional items match the current selection.`;
+      li.classList.add("shop-header");
+      shopList.appendChild(li);
+      return;
+    }
 
     const countMap = TIER_ITEM_COUNTS[selectedTier] || TIER_ITEM_COUNTS["1"];
     shopList.append(create("li", "shop-header", group.header));
@@ -126,6 +142,12 @@ ${item.Description}`
       }
     }
 
-    if (!total) alert("No items available for that selection!");
+    // No items rolled
+    if (!total) {
+      const li = document.createElement("li");
+      li.textContent = "No additional items match the current selection.";
+      li.classList.add("shop-header"); // match header style
+      shopList.appendChild(li);
+    }
   };
 }

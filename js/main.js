@@ -6,11 +6,93 @@ import { initShop } from './shop.js';
 initInfoButtons();
 initCounters();
 
-const response = await fetch('json/baseGame.json');
-const data = await response.json();
+// Active data object
+const activeData = {
+  Armor: [],
+  Magic: [],
+  Physical: [],
+  Secondary: [],
+  Items: [],
+  Consumables: []
+};
 
-initLoot(data);
-initShop(data);
+// Content pack registry
+const contentPacks = {
+  baseGame: {
+    checkboxId: 'baseGame-json',
+    url: 'json/baseGame.json'
+  },
+  beastFeast: {
+    checkboxId: 'beastFeast-json',
+    url: 'json/beastFeast.json'
+  },
+  drylands: {
+    checkboxId: 'drylands-json',
+    url: 'json/drylands.json'
+  }
+};
+
+// Utility functions
+async function loadJSON(url) {
+  const res = await fetch(url);
+  return res.json();
+}
+
+function tagData(data, source) {
+  Object.values(data).forEach(arr => {
+    if (Array.isArray(arr)) {
+      arr.forEach(item => item.__source = source);
+    }
+  });
+}
+
+function mergeData(target, source) {
+  Object.keys(source).forEach(key => {
+    if (!target[key]) target[key] = [];
+    target[key].push(...source[key]);
+  });
+}
+
+function removePack(source) {
+  Object.keys(activeData).forEach(key => {
+    activeData[key] = activeData[key].filter(item => item.__source !== source);
+  });
+}
+
+// Load all checked content at startup
+for (const [key, pack] of Object.entries(contentPacks)) {
+  const checkbox = document.getElementById(pack.checkboxId);
+  if (checkbox?.checked) {
+    const data = await loadJSON(pack.url);
+    tagData(data, key);
+    mergeData(activeData, data);
+  }
+}
+
+// Initialize Loot and Shop generators
+initLoot(activeData);
+initShop(activeData);
+
+// Add event listeners to checkboxes
+Object.entries(contentPacks).forEach(([key, pack]) => {
+  const checkbox = document.getElementById(pack.checkboxId);
+  if (!checkbox) return;
+
+  checkbox.addEventListener('change', async () => {
+    if (checkbox.checked) {
+      const data = await loadJSON(pack.url);
+      tagData(data, key);
+      mergeData(activeData, data);
+    } else {
+      removePack(key);
+    }
+
+    // Refresh generators after content change
+    initLoot(activeData);
+    initShop(activeData);
+  });
+});
+
 
 // Scale app to fit smaller screens without scaling up beyond 100%
 function scaleApp() {

@@ -53,11 +53,6 @@ export function initInfoButtons() {
     Rolls random items, consumables, weapons, or armor from the Daggerheart rules.
     It will also generate a gold drop depending on loot size and tier selected.
 
-      -Small: One drop from selected tier and (1d4 x tier) handfuls of gold
-      -Medium: Two drops from selected tier and (2d4 x tier) handfuls of gold
-      -Large: Three drops from selected tier and (3d4 x tier) handfuls of gold
-      -Hoard: Four drops from selected tier and (4d4 x tier) handfuls of gold
-
     To use, select desired loot size and tier, then click the roll loot button.
     Clicking the clear list button will empty the list.
     Hover over list items to view tooltips.
@@ -67,15 +62,7 @@ export function initInfoButtons() {
 Tier Selection
     
     Armor and weapons will roll from the selected tier.
-    Items and consumables roll on the tables in the Daggerheart rules.
-
-      -Tier 1: 2d12 plus or minus 1
-      -Tier 2: 3d12 plus or minus 1
-      -Tier 3: 4d12 plus or minus 1
-      -Tier 4: 5d12 plus or minus 1
-
-    Results fall between 1-60, making higher and lower rolls less common.
-    This makes rare items truly rare.
+    Items and consumables roll on the tables found in the Daggerheart rules.
     
 ---
 
@@ -111,9 +98,9 @@ Shop Generator
     content: `Content
     
     All content from the base game is included in the generators by default.    
-    You can choose the content you'd like to include by checking the boxes.
-    
-    Not all campaign frames contain additional items.
+    You can customize the content by checking the boxes.
+        
+    Not all campaign frames contain additional content.
     See the official Daggerheart rules for more details.`
     //End Content
   };

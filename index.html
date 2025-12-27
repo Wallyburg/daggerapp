@@ -31,15 +31,53 @@
             </button>
           </h1>
 
-          <!-- <div class="intro">
-            <p>Select from the following tabs to get started</p>
-            <p>The info buttons contain more information on each section</p>
-          </div> -->
-
           <div class="tabs">
-            <button class="tab-button active" data-tab="generator">Generators</button>
-            <button class="tab-button" data-tab="countdown">Countdowns</button>
             <button class="tab-button" data-tab="content">Content</button>
+            <button class="tab-button active" data-tab="generator">Loot & Shop</button>
+            <button class="tab-button" data-tab="countdown">Countdowns</button>            
+          </div>
+        </div>
+
+        <!-- Content Section -->
+        <div id="content" class="tab-content">
+          <div class="section-box">
+            <h1>
+              Content Selection
+              <button class="info-btn" data-info="content">
+                <svg width="22" height="22" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" fill="#FFD93D" />
+                  <text x="12" y="17" text-anchor="middle" font-size="14" font-family="Arial" fill="#000" font-weight="bold">i</text>
+                </svg>
+              </button>
+            </h1>
+
+            <div class="content-frame two-column">
+              <!-- Expansions Column -->
+              <fieldset class="content-column">
+                <h3>Expansions</h3>
+                <label>
+                  <input type="checkbox" id="baseGame-json" checked>
+                  Daggerheart: Base Game
+                </label>
+                <label>
+                  <input type="checkbox" id="hopeFear-json" disabled>
+                  Daggerheart: Hope & Fear <span style="color: #c93737;">(Coming Summer 2026)</span>
+                </label>
+              </fieldset>
+
+              <!-- Campaign Frames Column -->
+              <fieldset class="content-column">
+                <h3>Campaign Frames</h3>
+                <label>
+                  <input type="checkbox" id="beastFeast-json">
+                  Beast Feast
+                </label>
+                <label>
+                  <input type="checkbox" id="drylands-json">
+                  Colossus of the Drylands
+                </label>
+              </fieldset>              
+            </div>
           </div>
         </div>
 
@@ -186,49 +224,7 @@
             </div>
           </div>
         </div>
-
-        <!-- Content Section -->
-        <div id="content" class="tab-content">
-          <div class="section-box">
-            <h1>
-              Content Selection
-              <button class="info-btn" data-info="content">
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="10" fill="#FFD93D" />
-                  <text x="12" y="17" text-anchor="middle" font-size="14" font-family="Arial" fill="#000" font-weight="bold">i</text>
-                </svg>
-              </button>
-            </h1>
-
-            <div class="content-frame two-column">
-              <!-- Expansions Column -->
-              <fieldset class="content-column">
-                <h3>Expansions</h3>
-                <label>
-                  <input type="checkbox" id="expansion1-json" checked>
-                  Daggerheart: Base Game
-                </label>
-                <label>
-                  <input type="checkbox" id="expansion1-json" disabled>
-                  Daggerheart: Hope & Fear <span style="color: #c93737;">(Coming Summer 2026)</span>
-                </label>
-              </fieldset>
-
-              <!-- Campaign Frames Column -->
-              <fieldset class="content-column">
-                <h3>Campaign Frames</h3>
-                <label>
-                  <input type="checkbox" id="extras-json">
-                  Beast Feast
-                </label>
-                <label>
-                  <input type="checkbox" id="extras-json">
-                  Colossus of the Drylands
-                </label>
-              </fieldset>              
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
 

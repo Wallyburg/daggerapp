@@ -1,0 +1,326 @@
+{
+    "Armor": [
+        {
+            "Tier": "1",
+            "Name": "Quilted Clothing",
+            "Feature": "Flexible: +1 to Evasion",
+            "Thresholds": "5 / 11",
+            "Score": "3"
+        },
+        {
+            "Tier": "1",
+            "Name": "Leather Apron",
+            "Feature": "Mundane: No additional properties",
+            "Thresholds": "6 / 13",
+            "Score": "3"
+        },
+        {
+            "Tier": "1",
+            "Name": "Tree Bark Armor",
+            "Feature": "Heavy: -1 to Evasion",
+            "Thresholds": "7 / 15",
+            "Score": "4"
+        },
+        {
+            "Tier": "1",
+            "Name": "Baking Tray Breastplate",
+            "Feature": "Very Heavy: -2 to Evasion; -1 to Agility",
+            "Thresholds": "8 / 17",
+            "Score": "4"
+        }
+    ],
+    "Physical": [
+        {
+            "Tier": "1",
+            "Name": "Cleaver",
+            "Trait": "Agility",
+            "Range": "Melee",
+            "Damage": "d8",
+            "Burden": "1H",
+            "Feature": "Reliable: +1 to attack rolls"
+        },
+        {
+            "Tier": "1",
+            "Name": "Sharpened Rake",
+            "Trait": "Agility",
+            "Range": "Melee",
+            "Damage": "d8+3",
+            "Burden": "2H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Butcher’s Axe",
+            "Trait": "Strength",
+            "Range": "Melee",
+            "Damage": "d12+3",
+            "Burden": "2H",
+            "Feature": "Heavy: -1 to Evasion"
+        },
+        {
+            "Tier": "1",
+            "Name": "Iron Skillet",
+            "Trait": "Strength",
+            "Range": "Melee",
+            "Damage": "d8+1",
+            "Burden": "1H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Pitchfork",
+            "Trait": "Strength",
+            "Range": "Melee",
+            "Damage": "d10+3",
+            "Burden": "2H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Sledgehammer",
+            "Trait": "Strength",
+            "Range": "Melee",
+            "Damage": "d10+3",
+            "Burden": "2H",
+            "Feature": "Massive: -1 to Agility; on a successful attack, roll an additional damage die and discard the lowest result."
+        },
+        {
+            "Tier": "1",
+            "Name": "Cooking Knife",
+            "Trait": "Finesse",
+            "Range": "Melee",
+            "Damage": "d8+1",
+            "Burden": "1H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Walking Staff",
+            "Trait": "Instinct",
+            "Range": "Melee",
+            "Damage": "d10+3",
+            "Burden": "2H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Rolling Pin",
+            "Trait": "Presence",
+            "Range": "Melee",
+            "Damage": "d8+1",
+            "Burden": "1H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Sickle",
+            "Trait": "Presence",
+            "Range": "Melee",
+            "Damage": "d8",
+            "Burden": "1H",
+            "Feature": "Quick: When you make an attack, you can mark a Stress to target another creature within range."
+        },
+        {
+            "Tier": "1",
+            "Name": "Forge Poker",
+            "Trait": "Strength",
+            "Range": "Very Close",
+            "Damage": "d8+2",
+            "Burden": "2H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Crop Scythe",
+            "Trait": "Finesse",
+            "Range": "Very Close",
+            "Damage": "d8+2",
+            "Burden": "2H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Fishing Rod",
+            "Trait": "Agility",
+            "Range": "Far",
+            "Damage": "d6+3",
+            "Burden": "2H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Slingshot",
+            "Trait": "Finesse",
+            "Range": "Far",
+            "Damage": "d6+3",
+            "Burden": "2H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Firework Launcher",
+            "Trait": "Agility",
+            "Range": "Very Far",
+            "Damage": "d6+3",
+            "Burden": "2H",
+            "Feature": "Cumbersome: -1 to Finesse"
+        }
+    ],
+    "Magic": [
+        {
+            "Tier": "1",
+            "Name": "Enchanted Hammer",
+            "Trait": "Strength",
+            "Range": "Melee",
+            "Damage": "d10+1 mag",
+            "Burden": "1H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Enchanted Mop",
+            "Trait": "Strength",
+            "Range": "Melee",
+            "Damage": "d10+3 mag",
+            "Burden": "2H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Enchanted Scissors",
+            "Trait": "Finesse",
+            "Range": "Very Close",
+            "Damage": "d10 mag",
+            "Burden": "1H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Enchanted Broomstick",
+            "Trait": "Instinct",
+            "Range": "Very Close",
+            "Damage": "d10+2 mag",
+            "Burden": "2H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Exploding Potions",
+            "Trait": "Finesse",
+            "Range": "Close",
+            "Damage": "d8 mag",
+            "Burden": "1H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Enchanted Forge Lighter",
+            "Trait": "Instinct",
+            "Range": "Close",
+            "Damage": "d8 mag",
+            "Burden": "1H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Enchanted Boomerang",
+            "Trait": "Instinct",
+            "Range": "Far",
+            "Damage": "d6+3 mag",
+            "Burden": "2H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Enchanted Kite",
+            "Trait": "Presence",
+            "Range": "Far",
+            "Damage": "d6 mag",
+            "Burden": "2H",
+            "Feature": "Versatile: This weapon can also be used with these statistics—Presence, Melee, d10."
+        },
+        {
+            "Tier": "1",
+            "Name": "Whisk Wand",
+            "Trait": "Knowledge",
+            "Range": "Far",
+            "Damage": "d6+1 mag",
+            "Burden": "1H",
+            "Feature": "Mundane: No additional properties"
+        },
+        {
+            "Tier": "1",
+            "Name": "Sparkling Staff",
+            "Trait": "Knowledge",
+            "Range": "Very Far",
+            "Damage": "d6 mag",
+            "Burden": "2H",
+            "Feature": "Powerful: On a successful attack, roll an additional damage die and discard the lowest result."
+        }
+    ],
+    "Secondary": [
+        {
+            "Tier": "1",
+            "Name": "Large Fork",
+            "Trait": "Agility",
+            "Range": "Melee",
+            "Damage": "d8",
+            "Burden": "1H",
+            "Feature": "Paired: +2 to primary weapon damage to targets within Melee range"
+        },
+        {
+            "Tier": "1",
+            "Name": "Barrel Lid Shield",
+            "Trait": "Strength",
+            "Range": "Melee",
+            "Damage": "d4",
+            "Burden": "1H",
+            "Feature": "Protective: +1 to Armor Score"
+        },
+        {
+            "Tier": "1",
+            "Name": "Table Shield",
+            "Trait": "Strength",
+            "Range": "Melee",
+            "Damage": "d6",
+            "Burden": "1H",
+            "Feature": "Barrier: +2 to Armor Score; -1 to Evasion"
+        },
+        {
+            "Tier": "1",
+            "Name": "Paring Knife",
+            "Trait": "Finesse",
+            "Range": "Melee",
+            "Damage": "d8",
+            "Burden": "1H",
+            "Feature": "Paired: +2 to primary weapon damage to targets within Melee range"
+        },
+        {
+            "Tier": "1",
+            "Name": "Festival Whip",
+            "Trait": "Presence",
+            "Range": "Very Close",
+            "Damage": "d6",
+            "Burden": "1H",
+            "Feature": "Startling: Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range."
+        },
+        {
+            "Tier": "1",
+            "Name": "Towline Hook",
+            "Trait": "Finesse",
+            "Range": "Close",
+            "Damage": "d6",
+            "Burden": "1H",
+            "Feature": "Hooked: On a successful attack, you can pull the target into Melee range with you."
+        },
+        {
+            "Tier": "1",
+            "Name": "Flare Launcher",
+            "Trait": "Finesse",
+            "Range": "Far",
+            "Damage": "d6+1",
+            "Burden": "1H",
+            "Feature": "Bright: This weapon temporarily lights up the area the flare lands in."
+        }
+    ]
+}

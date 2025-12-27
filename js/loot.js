@@ -154,6 +154,11 @@ ${item.Description}`;
 
     [ [chests, "Chests"], [bags, "Bags"], [handfuls, "Handfuls"] ].forEach(([amt, unit]) => addGoldLine(amt, unit));
 
-    if (lootCount === 0) alert("No items available for that selection!");
+    if (lootCount === 0) {
+      const li = document.createElement("li");
+      li.textContent = "No additional items match the current selection.";
+      li.classList.add("loot-header"); // optional CSS class for styling
+      lootList.appendChild(li);
+    }
   });
 }

@@ -1,0 +1,186 @@
+{    
+    "Physical": [
+        {
+            "Tier": "1",
+            "Name": "Tier 1 Revolver",
+            "Trait": "Finesse",
+            "Range": "Far",
+            "Damage": "d6+1",
+            "Burden": "1H",
+            "Feature": "Six Shot: Place 6 Ammo tokens on your character sheet. \nSpend 1 Ammo token to make an attack. \nYou can mark a Stress to regain spent Ammo tokens."
+        },
+        {
+            "Tier": "2",
+            "Name": "Tier 2 Revolver",
+            "Trait": "Finesse",
+            "Range": "Far",
+            "Damage": "d6+4",
+            "Burden": "1H",
+            "Feature": "Six Shot: Place 6 Ammo tokens on your character sheet. \nSpend 1 Ammo token to make an attack. \nYou can mark a Stress to regain spent Ammo tokens."
+        },
+        {
+            "Tier": "3",
+            "Name": "Tier 3 Revolver",
+            "Trait": "Finesse",
+            "Range": "Far",
+            "Damage": "d6+7",
+            "Burden": "1H",
+            "Feature": "Six Shot: Place 6 Ammo tokens on your character sheet. \nSpend 1 Ammo token to make an attack. \nYou can mark a Stress to regain spent Ammo tokens."
+        },
+        {
+            "Tier": "4",
+            "Name": "Tier 4 Revolver",
+            "Trait": "Finesse",
+            "Range": "Far",
+            "Damage": "d6+10",
+            "Burden": "1H",
+            "Feature": "Six Shot: Place 6 Ammo tokens on your character sheet. \nSpend 1 Ammo token to make an attack. \nYou can mark a Stress to regain spent Ammo tokens."
+        },
+        {
+            "Tier": "1",
+            "Name": "Tier 1 Rifle",
+            "Trait": "Agility",
+            "Range": "Very Far",
+            "Damage": "d8+2",
+            "Burden": "2H",
+            "Feature": "Sightline: Spend 2 Hope to gain advantage on an attack roll."
+        },
+        {
+            "Tier": "2",
+            "Name": "Tier 2 Rifle",
+            "Trait": "Agility",
+            "Range": "Very Far",
+            "Damage": "d8+5",
+            "Burden": "2H",
+            "Feature": "Sightline: Spend 2 Hope to gain advantage on an attack roll."
+        },
+        {
+            "Tier": "3",
+            "Name": "Tier 3 Rifle",
+            "Trait": "Agility",
+            "Range": "Very Far",
+            "Damage": "d8+8",
+            "Burden": "2H",
+            "Feature": "Sightline: Spend 2 Hope to gain advantage on an attack roll."
+        },
+        {
+            "Tier": "4",
+            "Name": "Tier 4 Rifle",
+            "Trait": "Agility",
+            "Range": "Very Far",
+            "Damage": "d8+11",
+            "Burden": "2H",
+            "Feature": "Sightline: Spend 2 Hope to gain advantage on an attack roll."
+        },
+        {
+            "Tier": "1",
+            "Name": "Tier 1 Shotgun",
+            "Trait": "Strength",
+            "Range": "Very Close",
+            "Damage": "d6+2",
+            "Burden": "2H",
+            "Feature": "Scattershot: When you make an attack, target all creatures in front of you within range."
+        },
+        {
+            "Tier": "2",
+            "Name": "Tier 2 Shotgun",
+            "Trait": "Strength",
+            "Range": "Very Close",
+            "Damage": "d6+5",
+            "Burden": "2H",
+            "Feature": "Scattershot: When you make an attack, target all creatures in front of you within range."
+        },
+        {
+            "Tier": "3",
+            "Name": "Tier 3 Shotgun",
+            "Trait": "Strength",
+            "Range": "Very Close",
+            "Damage": "d6+8",
+            "Burden": "2H",
+            "Feature": "Scattershot: When you make an attack, target all creatures in front of you within range."
+        },
+        {
+            "Tier": "4",
+            "Name": "Tier 4 Shotgun",
+            "Trait": "Strength",
+            "Range": "Very Close",
+            "Damage": "d6+11",
+            "Burden": "2H",
+            "Feature": "Scattershot: When you make an attack, target all creatures in front of you within range."
+        }
+    ],
+    "Secondary": [
+        {
+            "Tier": "1",
+            "Name": "Tier 1 Lasso",
+            "Trait": "Agility",
+            "Range": "Very Close",
+            "Damage": "d4",
+            "Burden": "1H",
+            "Feature": "Roped: On a successful attack, you can temporarily Rope the target instead of dealing damage. \nWhile Roped, the target is Restrained and Vulnerable, but you must remain within Very Close range of the target. \nWhen the target clears this condition, you can make a Strength Reaction Roll. \nOn a success, they remain Roped."
+        },
+        {
+            "Tier": "2",
+            "Name": "Tier 2 Lasso",
+            "Trait": "Agility",
+            "Range": "Very Close",
+            "Damage": "d4+3",
+            "Burden": "1H",
+            "Feature": "Roped: On a successful attack, you can temporarily Rope the target instead of dealing damage. \nWhile Roped, the target is Restrained and Vulnerable, but you must remain within Very Close range of the target. \nWhen the target clears this condition, you can make a Strength Reaction Roll. \nOn a success, they remain Roped."
+        },
+        {
+            "Tier": "3",
+            "Name": "Tier 3 Lasso",
+            "Trait": "Agility",
+            "Range": "Very Close",
+            "Damage": "d4+6",
+            "Burden": "1H",
+            "Feature": "Roped: On a successful attack, you can temporarily Rope the target instead of dealing damage. \nWhile Roped, the target is Restrained and Vulnerable, but you must remain within Very Close range of the target. \nWhen the target clears this condition, you can make a Strength Reaction Roll. \nOn a success, they remain Roped."
+        },
+        {
+            "Tier": "4",
+            "Name": "Tier 4 Lasso",
+            "Trait": "Agility",
+            "Range": "Very Close",
+            "Damage": "d4+9",
+            "Burden": "1H",
+            "Feature": "Roped: On a successful attack, you can temporarily Rope the target instead of dealing damage. \nWhile Roped, the target is Restrained and Vulnerable, but you must remain within Very Close range of the target. \nWhen the target clears this condition, you can make a Strength Reaction Roll. \nOn a success, they remain Roped."
+        },
+        {
+            "Tier": "1",
+            "Name": "Tier 1 Small Revolver",
+            "Trait": "Finesse",
+            "Range": "Far",
+            "Damage": "d6",
+            "Burden": "1H",
+            "Feature": "Quick Shot: Spend 2 Hope to gain a +4 bonus to primary weapon damage."
+        },
+        {
+            "Tier": "2",
+            "Name": "Tier 2 Small Revolver",
+            "Trait": "Finesse",
+            "Range": "Far",
+            "Damage": "d6+3",
+            "Burden": "1H",
+            "Feature": "Quick Shot: Spend 2 Hope to gain a +4 bonus to primary weapon damage."
+        },
+        {
+            "Tier": "3",
+            "Name": "Tier 3 Small Revolver",
+            "Trait": "Finesse",
+            "Range": "Far",
+            "Damage": "d6+6",
+            "Burden": "1H",
+            "Feature": "Quick Shot: Spend 2 Hope to gain a +4 bonus to primary weapon damage."
+        },
+        {
+            "Tier": "4",
+            "Name": "Tier 4 Small Revolver",
+            "Trait": "Finesse",
+            "Range": "Far",
+            "Damage": "d6+9",
+            "Burden": "1H",
+            "Feature": "Quick Shot: Spend 2 Hope to gain a +4 bonus to primary weapon damage."
+        }
+    ]
+}
