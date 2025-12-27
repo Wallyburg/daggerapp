@@ -98,9 +98,11 @@ Shop Generator
     content: `Content
     
     All content from the base game is included in the generators by default.    
-    You can customize the content by checking the boxes.
+    You can customize the included content by checking the boxes.
         
     Not all campaign frames contain additional content.
+    Only campaign frames with stat blocked items are included here.
+
     See the official Daggerheart rules for more details.`
     //End Content
   };

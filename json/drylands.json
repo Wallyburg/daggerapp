@@ -2,7 +2,7 @@
     "Physical": [
         {
             "Tier": "1",
-            "Name": "Tier 1 Revolver",
+            "Name": "Revolver",
             "Trait": "Finesse",
             "Range": "Far",
             "Damage": "d6+1",
@@ -11,7 +11,7 @@
         },
         {
             "Tier": "2",
-            "Name": "Tier 2 Revolver",
+            "Name": "Improved Revolver",
             "Trait": "Finesse",
             "Range": "Far",
             "Damage": "d6+4",
@@ -20,7 +20,7 @@
         },
         {
             "Tier": "3",
-            "Name": "Tier 3 Revolver",
+            "Name": "Advanced Revolver",
             "Trait": "Finesse",
             "Range": "Far",
             "Damage": "d6+7",
@@ -29,7 +29,7 @@
         },
         {
             "Tier": "4",
-            "Name": "Tier 4 Revolver",
+            "Name": "Legendary Revolver",
             "Trait": "Finesse",
             "Range": "Far",
             "Damage": "d6+10",
@@ -38,7 +38,7 @@
         },
         {
             "Tier": "1",
-            "Name": "Tier 1 Rifle",
+            "Name": "Rifle",
             "Trait": "Agility",
             "Range": "Very Far",
             "Damage": "d8+2",
@@ -47,7 +47,7 @@
         },
         {
             "Tier": "2",
-            "Name": "Tier 2 Rifle",
+            "Name": "Improved Rifle",
             "Trait": "Agility",
             "Range": "Very Far",
             "Damage": "d8+5",
@@ -56,7 +56,7 @@
         },
         {
             "Tier": "3",
-            "Name": "Tier 3 Rifle",
+            "Name": "Advanced Rifle",
             "Trait": "Agility",
             "Range": "Very Far",
             "Damage": "d8+8",
@@ -65,7 +65,7 @@
         },
         {
             "Tier": "4",
-            "Name": "Tier 4 Rifle",
+            "Name": "Legendary Rifle",
             "Trait": "Agility",
             "Range": "Very Far",
             "Damage": "d8+11",
@@ -74,7 +74,7 @@
         },
         {
             "Tier": "1",
-            "Name": "Tier 1 Shotgun",
+            "Name": "Shotgun",
             "Trait": "Strength",
             "Range": "Very Close",
             "Damage": "d6+2",
@@ -83,7 +83,7 @@
         },
         {
             "Tier": "2",
-            "Name": "Tier 2 Shotgun",
+            "Name": "Improved Shotgun",
             "Trait": "Strength",
             "Range": "Very Close",
             "Damage": "d6+5",
@@ -92,7 +92,7 @@
         },
         {
             "Tier": "3",
-            "Name": "Tier 3 Shotgun",
+            "Name": "Advanced Shotgun",
             "Trait": "Strength",
             "Range": "Very Close",
             "Damage": "d6+8",
@@ -101,7 +101,7 @@
         },
         {
             "Tier": "4",
-            "Name": "Tier 4 Shotgun",
+            "Name": "Legendary Shotgun",
             "Trait": "Strength",
             "Range": "Very Close",
             "Damage": "d6+11",
@@ -112,7 +112,7 @@
     "Secondary": [
         {
             "Tier": "1",
-            "Name": "Tier 1 Lasso",
+            "Name": "Lasso",
             "Trait": "Agility",
             "Range": "Very Close",
             "Damage": "d4",
@@ -121,7 +121,7 @@
         },
         {
             "Tier": "2",
-            "Name": "Tier 2 Lasso",
+            "Name": "Improved Lasso",
             "Trait": "Agility",
             "Range": "Very Close",
             "Damage": "d4+3",
@@ -130,7 +130,7 @@
         },
         {
             "Tier": "3",
-            "Name": "Tier 3 Lasso",
+            "Name": "Advanced Lasso",
             "Trait": "Agility",
             "Range": "Very Close",
             "Damage": "d4+6",
@@ -139,7 +139,7 @@
         },
         {
             "Tier": "4",
-            "Name": "Tier 4 Lasso",
+            "Name": "Legendary Lasso",
             "Trait": "Agility",
             "Range": "Very Close",
             "Damage": "d4+9",
@@ -148,7 +148,7 @@
         },
         {
             "Tier": "1",
-            "Name": "Tier 1 Small Revolver",
+            "Name": "Small Revolver",
             "Trait": "Finesse",
             "Range": "Far",
             "Damage": "d6",
@@ -157,7 +157,7 @@
         },
         {
             "Tier": "2",
-            "Name": "Tier 2 Small Revolver",
+            "Name": "Improved Small Revolver",
             "Trait": "Finesse",
             "Range": "Far",
             "Damage": "d6+3",
@@ -166,7 +166,7 @@
         },
         {
             "Tier": "3",
-            "Name": "Tier 3 Small Revolver",
+            "Name": "Advanced Small Revolver",
             "Trait": "Finesse",
             "Range": "Far",
             "Damage": "d6+6",
@@ -175,7 +175,7 @@
         },
         {
             "Tier": "4",
-            "Name": "Tier 4 Small Revolver",
+            "Name": "Legendary Small Revolver",
             "Trait": "Finesse",
             "Range": "Far",
             "Damage": "d6+9",
