@@ -22,6 +22,11 @@ const contentPacks = {
     checkboxId: 'baseGame-json',
     url: 'json/baseGame.json'
   },
+/*  hopeFear: {
+    checkboxId: 'hopeFear-json',
+    url: 'json/hopeFear.json'
+  },
+*/ //Remove block comment from hopeFear after go-live. See line 63 in index.html
   beastFeast: {
     checkboxId: 'beastFeast-json',
     url: 'json/beastFeast.json'
@@ -102,21 +107,26 @@ function scaleApp() {
   const containerWidth = 1080;
   const containerHeight = 690;
 
-  const scaleX = window.innerWidth / containerWidth;
-  const scaleY = window.innerHeight / containerHeight;
+  // Use visualViewport when available (fixes mobile issues)
+  const vw = window.visualViewport?.width || window.innerWidth;
+  const vh = window.visualViewport?.height || window.innerHeight;
+
+  const scaleX = vw / containerWidth;
+  const scaleY = vh / containerHeight;
   const scale = Math.min(scaleX, scaleY, 1);
 
   const scaledWidth = containerWidth * scale;
   const scaledHeight = containerHeight * scale;
 
-  const translateX = (window.innerWidth - scaledWidth) / 2;
-  const translateY = (window.innerHeight - scaledHeight) / 2;
+  const translateX = (vw - scaledWidth) / 2;
+  const translateY = (vh - scaledHeight) / 2;
 
   app.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
 }
 
 window.addEventListener('resize', scaleApp);
 window.addEventListener('load', scaleApp);
+window.visualViewport?.addEventListener('resize', scaleApp);
 
 // Call function to scale on first time page load
 scaleApp();
