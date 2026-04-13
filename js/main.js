@@ -108,8 +108,8 @@ function scaleApp() {
   const containerHeight = 690;
 
   // Use visualViewport when available (fixes mobile issues)
-  const vw = window.innerWidth;
-  const vh = window.innerHeight;
+  const vw = window.visualViewport?.width || window.innerWidth;
+  const vh = window.visualViewport?.height || window.innerHeight;
 
   const scaleX = vw / containerWidth;
   const scaleY = vh / containerHeight;
@@ -124,8 +124,27 @@ function scaleApp() {
   app.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
 }
 
-window.addEventListener('resize', scaleApp);
+function shouldScale() {
+  return !window.visualViewport || window.visualViewport.scale === 1;
+}
+
+// Initial load
 window.addEventListener('load', scaleApp);
+
+// Desktop resize + mobile layout resize (but NOT zoom)
+window.addEventListener('resize', () => {
+  if (shouldScale()) scaleApp();
+});
+
+// Mobile viewport changes (like keyboard, UI chrome, etc.)
+window.visualViewport?.addEventListener('resize', () => {
+  if (shouldScale()) scaleApp();
+});
+
+// Orientation change (force it)
+window.addEventListener('orientationchange', () => {
+  setTimeout(scaleApp, 100);
+});
 
 // Call function to scale on first time page load
 scaleApp();
