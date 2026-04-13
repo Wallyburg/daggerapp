@@ -24,21 +24,21 @@ export function initShop(data) {
   };
 
   // Tooltip setup
-  const overlay = Object.assign(document.createElement("div"), { className: "tooltip-overlay" });
-  const tooltip = Object.assign(document.createElement("div"), { className: "tooltip" });
-  lootResults.append(overlay, tooltip);
+  const tooltip = document.createElement("div");
+  tooltip.className = "tooltip";
+  document.body.appendChild(tooltip);
 
-  const showTooltip = text => {
+  const showTooltip = (text, e) => {
     tooltip.textContent = text;
-    tooltip.style.cssText = "left:20px;top:65px;opacity:1";
     tooltip.classList.add("show");
-    overlay.classList.add("show");
+
+    const pad = 12;
+    tooltip.style.left = `${e.clientX + pad}px`;
+    tooltip.style.top = `${e.clientY + pad}px`;
   };
 
   const hideTooltip = () => {
-    tooltip.style.opacity = "0";
     tooltip.classList.remove("show");
-    overlay.classList.remove("show");
   };
 
   const rollDice = (numDice, sides) =>
@@ -77,7 +77,7 @@ ${item.Description}`
         : "Unknown item type";
 
     li.textContent = item.Name || item.Loot || "Unknown Item";
-    li.addEventListener("mouseenter", () => showTooltip(tooltipText));
+    li.addEventListener("mouseenter", (e) => showTooltip(tooltipText, e));
     li.addEventListener("mouseleave", hideTooltip);
     container.appendChild(li);
   };
@@ -88,7 +88,7 @@ ${item.Description}`
     shopList.innerHTML = "";
 
     const shopType = parseInt($("shop-dropdown").value, 10) - 1;
-    const selectedTier = $("tier-dropdown").value;
+    const selectedTier = $("tier-dropdown-shop").value;
     const group = ALL_GROUPS[shopType];
 
     // Invalid shop type

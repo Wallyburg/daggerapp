@@ -1,33 +1,57 @@
 .loot-results,
 .shop-results {
   position: relative;
-  flex: 1;
-  width: 50%;
+
+  /* FIX: remove rigid split */
+  flex: 1 1 300px;
+  width: auto;
+
   background: rgba(50, 50, 50, 0.75);
   border: 2px solid rgba(255, 255, 255, 0.15);
   border-radius: 6px;
+
+  box-sizing: border-box;
 }
 
+/* =========================
+   LISTBOX (PRE TAG SAFE)
+========================= */
 .listbox {
   width: 100%;
   min-height: 260px;
+
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   line-height: 1.5;
+
   background: rgba(30, 30, 30, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.2);
+
   border-radius: 6px;
   padding: 0.5rem 0.75rem;
+
   overflow-y: auto;
+  overflow-x: auto;
+
   color: #ffffffc0;
   box-sizing: border-box;
+
   margin-bottom: 0;
+
+  /* IMPORTANT: prevents layout overflow on mobile */
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
+/* =========================
+   LIST ITEM RULES (SAFEGUARD)
+   (only applies if you later switch to UL)
+========================= */
 .listbox li {
   padding: 1px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -45,20 +69,24 @@
       rgba(255, 255, 255, 0) 60%
     ),
     #8735cf;
+
   color: #000000c0;
   cursor: default;
 }
 
+/* =========================
+   TOOLTIP SYSTEM (UNCHANGED BUT STABILIZED)
+========================= */
 .tooltip-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+
   background: rgba(0, 0, 0, 0.4);
   pointer-events: none;
+
   opacity: 0;
   z-index: 900;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -67,8 +95,8 @@
 }
 
 .tooltip {
-  position: absolute;
-  white-space: pre-wrap;
+  position: fixed;
+  white-space: pre-line;
   border: 1px solid #000;
   background:
     linear-gradient(
@@ -82,7 +110,7 @@
   border-radius: 5px;
   font-family: Arial, sans-serif;
   font-weight: bold;
-  max-width: 460px;
+  max-width: min(450px, 90vw); /* FIXED FOR MOBILE */
   max-height: 250px;
   box-sizing: border-box;
   overflow: auto;
@@ -94,9 +122,12 @@
 }
 
 .tooltip.show {
-  opacity: 1;
+  opacity: .7;
 }
 
+/* =========================
+   HEADERS (UNCHANGED VISUALS)
+========================= */
 .shop-header,
 .loot-header {
   font-weight: bold;
@@ -111,9 +142,26 @@
   margin-top: 5px;
 }
 
+/* =========================
+   CATEGORY LISTS
+========================= */
 .shop-category-list,
 .loot-category-list {
   list-style: none;
   padding-left: 15px;
   margin: 1px 0 0;
+}
+
+/* =========================
+   MOBILE SAFETY NET
+========================= */
+@media (max-width: 700px) {
+  .loot-results,
+  .shop-results {
+    flex: 1 1 100%;
+  }
+
+  .listbox {
+    min-height: 200px;
+  }
 }

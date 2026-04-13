@@ -16,14 +16,33 @@
   </head>
 
   <body>
-    <div id="app">
-      <div class="container">
-        
-        <!-- Welcome Section -->
+    <div class="page">     
+      <!-- Welcome Section -->
+      <div class="section-box">
+        <h1>
+          Welcome to DaggerApp
+          <button class="info-btn" data-info="welcome">
+            <svg width="22" height="22" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" fill="#FFD93D" />
+              <text x="12" y="17" text-anchor="middle" font-size="14" font-family="Arial" fill="#000" font-weight="bold">i</text>
+            </svg>
+          </button>
+        </h1>
+
+        <div class="tabs">
+          <button class="tab-button" data-tab="content">Content</button>
+          <button class="tab-button active" data-tab="generator">Loot & Shop</button>
+          <button class="tab-button" data-tab="countdown">Countdowns</button>            
+        </div>
+      </div>
+      <!-- End Welcome Section -->
+
+      <!-- Content Section -->
+      <div id="content" class="tab-content">
         <div class="section-box">
           <h1>
-            Welcome to DaggerApp
-            <button class="info-btn" data-info="welcome">
+            Content Selection
+            <button class="info-btn" data-info="content">
               <svg width="22" height="22" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" fill="#FFD93D" />
                 <text x="12" y="17" text-anchor="middle" font-size="14" font-family="Arial" fill="#000" font-weight="bold">i</text>
@@ -31,76 +50,56 @@
             </button>
           </h1>
 
-          <div class="tabs">
-            <button class="tab-button" data-tab="content">Content</button>
-            <button class="tab-button active" data-tab="generator">Loot & Shop</button>
-            <button class="tab-button" data-tab="countdown">Countdowns</button>            
+          <div class="content-frame two-column">
+            <!-- Expansions Column -->
+            <fieldset class="content-column">
+              <h3>Expansions</h3>
+              <label>
+                <input type="checkbox" id="baseGame-json" checked>
+                Daggerheart: Base Game
+              </label>
+              <label>
+                <!-- Remove the Summer 2026 message after go-live. See line 25 in main.js -->
+                <input type="checkbox" id="hopeFear-json" disabled>
+                Daggerheart: Hope & Fear <span style="color: #c93737;">(Coming Summer 2026)</span>
+              </label>
+            </fieldset>
+
+            <!-- Campaign Frames Column -->
+            <fieldset class="content-column">
+              <h3>Campaign Frames</h3>
+              <label>
+                <input type="checkbox" id="beastFeast-json">
+                Beast Feast
+              </label>
+              <label>
+                <input type="checkbox" id="drylands-json">
+                Colossus of the Drylands
+              </label>
+            </fieldset>              
           </div>
         </div>
-        <!-- End Welcome Section -->
+      </div>
+      <!-- End Content Section -->
 
-        <!-- Content Section -->
-        <div id="content" class="tab-content">
-          <div class="section-box">
-            <h1>
-              Content Selection
-              <button class="info-btn" data-info="content">
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="10" fill="#FFD93D" />
-                  <text x="12" y="17" text-anchor="middle" font-size="14" font-family="Arial" fill="#000" font-weight="bold">i</text>
-                </svg>
-              </button>
-            </h1>
+      <!-- Generator Section -->
+      <div id="generator" class="tab-content active">
+        <div class="section-box">
+          <h1>
+            Loot & Shop Generators
+            <button class="info-btn" data-info="loot">
+              <svg width="22" height="22" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="#FFD93D" />
+                <text x="12" y="17" text-anchor="middle" font-size="14" font-family="Arial" fill="#000" font-weight="bold">i</text>
+              </svg>
+            </button>
+          </h1>
 
-            <div class="content-frame two-column">
-              <!-- Expansions Column -->
-              <fieldset class="content-column">
-                <h3>Expansions</h3>
-                <label>
-                  <input type="checkbox" id="baseGame-json" checked>
-                  Daggerheart: Base Game
-                </label>
-                <label>
-                  <!-- Remove the Summer 2026 message after go-live. See line 25 in main.js -->
-                  <input type="checkbox" id="hopeFear-json" disabled>
-                  Daggerheart: Hope & Fear <span style="color: #c93737;">(Coming Summer 2026)</span>
-                </label>
-              </fieldset>
-
-              <!-- Campaign Frames Column -->
-              <fieldset class="content-column">
-                <h3>Campaign Frames</h3>
-                <label>
-                  <input type="checkbox" id="beastFeast-json">
-                  Beast Feast
-                </label>
-                <label>
-                  <input type="checkbox" id="drylands-json">
-                  Colossus of the Drylands
-                </label>
-              </fieldset>              
-            </div>
-          </div>
-        </div>
-        <!-- End Content Section -->
-
-        <!-- Generator Section -->
-        <div id="generator" class="tab-content active">
-          <div class="section-box">
-            <h1>
-              Loot & Shop Generators
-              <button class="info-btn" data-info="loot">
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="10" fill="#FFD93D" />
-                  <text x="12" y="17" text-anchor="middle" font-size="14" font-family="Arial" fill="#000" font-weight="bold">i</text>
-                </svg>
-              </button>
-            </h1>
-
-            <div class="gen-frame">
-              <!-- Loot Dropdown -->
-              <fieldset>
-                <div class="dropdown-row">
+          <div class="gen-frame">
+            <!-- LOOT PANEL -->
+            <fieldset class="loot-results" id="loot-results">
+              <div class="dropdown-row-group">
+                <div class="dropdown-block">
                   <div class="dropdown-label">
                     <label for="loot-dropdown">Select Loot Size</label>
                   </div>
@@ -111,26 +110,32 @@
                     <option value="4">Hoard</option>
                   </select>
                 </div>
-              </fieldset>
 
-              <!-- Tier Dropdown -->
-              <fieldset>
-                <div class="dropdown-row">
+                <div class="dropdown-block">
                   <div class="dropdown-label">
-                    <label for="tier-dropdown">Select Tier</label>
+                    <label for="tier-dropdown-loot">Select Tier</label>
                   </div>
-                  <select id="tier-dropdown">
+                  <select id="tier-dropdown-loot">
                     <option value="1">Tier 1 (Level 1)</option>
                     <option value="2">Tier 2 (Level 2-4)</option>
                     <option value="3">Tier 3 (Level 5-7)</option>
                     <option value="4">Tier 4 (Level 8-10)</option>
                   </select>
                 </div>
-              </fieldset>
+              </div>
 
-              <!-- Shop Dropdown -->
-              <fieldset>
-                <div class="dropdown-row">
+              <div class="results-btn-group">
+                <button id="roll-loot-btn" type="button">Roll Loot</button>
+                <button id="clear-loot-list" type="button">Clear List</button>
+              </div>
+
+              <pre class="listbox" id="loot-listbox"></pre>
+            </fieldset>
+
+            <!-- SHOP PANEL -->
+            <fieldset class="shop-results" id="shop-results">
+              <div class="dropdown-row-group">
+                <div class="dropdown-block">
                   <div class="dropdown-label">
                     <label for="shop-dropdown">Select Shop Type</label>
                   </div>
@@ -143,93 +148,94 @@
                     <option value="6">Secondary Weapons</option>
                   </select>
                 </div>
-              </fieldset>
 
-              <!-- Loot Listbox -->
-              <fieldset class="loot-results" id="loot-results">
-                <div class="results-btn-group">
-                  <button id="roll-loot-btn" type="button">Roll Loot</button>
-                  <button id="clear-loot-list" type="button">Clear List</button>
+                <div class="dropdown-block">
+                  <div class="dropdown-label">
+                    <label for="tier-dropdown-shop">Select Tier</label>
+                  </div>
+                  <select id="tier-dropdown-shop">
+                    <option value="1">Tier 1 (Level 1)</option>
+                    <option value="2">Tier 2 (Level 2-4)</option>
+                    <option value="3">Tier 3 (Level 5-7)</option>
+                    <option value="4">Tier 4 (Level 8-10)</option>
+                  </select>
                 </div>
-                <pre class="listbox" id="loot-listbox"></pre>
-              </fieldset>
+              </div>
 
-              <!-- Shop Listbox -->
-              <fieldset class="shop-results" id="shop-results">
-                <div class="results-btn-group">
-                  <button id="roll-shop-btn" type="button">Roll Shop</button>
-                  <button id="clear-shop-list" type="button">Clear List</button>
-                </div>
-                <pre class="listbox" id="shop-listbox"></pre>
-              </fieldset>
-            </div>
+              <div class="results-btn-group">
+                <button id="roll-shop-btn" type="button">Roll Shop</button>
+                <button id="clear-shop-list" type="button">Clear List</button>
+              </div>
+
+              <pre class="listbox" id="shop-listbox"></pre>
+            </fieldset>
           </div>
         </div>
-        <!-- End Generator Section -->
-         
-        <!-- Countdown Section -->
-        <div id="countdown" class="tab-content">
-          <div class="section-box">
-            <h1>
-              Countdowns
-              <button class="info-btn" data-info="countdowns">
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="10" fill="#FFD93D" />
-                  <text x="12" y="17" text-anchor="middle" font-size="14" font-family="Arial" fill="#000" font-weight="bold">i</text>
-                </svg>
-              </button>
-            </h1>
-
-            <div class="counter-frame">
-              <!-- Countdown A -->
-              <div class="counter-box">
-                <h3>Countdown A</h3>
-                <div class="counter-value" id="progress-value">0</div>
-                <div class="counter-buttons">
-                  <button class="counter-btn-3" data-value="-3">-3</button>
-                  <button class="counter-btn-2" data-value="-2">-2</button>
-                  <button class="counter-btn-1" data-value="-1">-1</button>
-                  <button class="counter-btn-purple-1" data-value="1">+1</button>
-                  <button class="counter-btn-purple-2" data-value="2">+2</button>
-                  <button class="counter-btn-purple-3" data-value="3">+3</button>
-                </div>
-                <button class="reset-btn">Reset</button>
-              </div>
-
-              <!-- Countdown B -->
-              <div class="counter-box">
-                <h3>Countdown B</h3>
-                <div class="counter-value" id="consequence-value">0</div>
-                <div class="counter-buttons">
-                  <button class="counter-btn-3" data-value="-3">-3</button>
-                  <button class="counter-btn-2" data-value="-2">-2</button>
-                  <button class="counter-btn-1" data-value="-1">-1</button>
-                  <button class="counter-btn-purple-1" data-value="1">+1</button>
-                  <button class="counter-btn-purple-2" data-value="2">+2</button>
-                  <button class="counter-btn-purple-3" data-value="3">+3</button>
-                </div>
-                <button class="reset-btn">Reset</button>
-              </div>
-
-              <!-- Countdown C -->
-              <div class="counter-box">
-                <h3>Countdown C</h3>
-                <div class="counter-value" id="countdown-c-value">0</div>
-                <div class="counter-buttons">
-                  <button class="counter-btn-3" data-value="-3">-3</button>
-                  <button class="counter-btn-2" data-value="-2">-2</button>
-                  <button class="counter-btn-1" data-value="-1">-1</button>
-                  <button class="counter-btn-purple-1" data-value="1">+1</button>
-                  <button class="counter-btn-purple-2" data-value="2">+2</button>
-                  <button class="counter-btn-purple-3" data-value="3">+3</button>
-                </div>
-                <button class="reset-btn">Reset</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Countdown Section -->
       </div>
+      <!-- End Generator Section -->
+        
+      <!-- Countdown Section -->
+      <div id="countdown" class="tab-content">
+        <div class="section-box">
+          <h1>
+            Countdowns
+            <button class="info-btn" data-info="countdowns">
+              <svg width="22" height="22" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="#FFD93D" />
+                <text x="12" y="17" text-anchor="middle" font-size="14" font-family="Arial" fill="#000" font-weight="bold">i</text>
+              </svg>
+            </button>
+          </h1>
+
+          <div class="counter-frame">
+            <!-- Countdown A -->
+            <div class="counter-box">
+              <h3>Countdown A</h3>
+              <div class="counter-value" id="progress-value">0</div>
+              <div class="counter-buttons">
+                <button class="counter-btn-3" data-value="-3">-3</button>
+                <button class="counter-btn-2" data-value="-2">-2</button>
+                <button class="counter-btn-1" data-value="-1">-1</button>
+                <button class="counter-btn-purple-1" data-value="1">+1</button>
+                <button class="counter-btn-purple-2" data-value="2">+2</button>
+                <button class="counter-btn-purple-3" data-value="3">+3</button>
+              </div>
+              <button class="reset-btn">Reset</button>
+            </div>
+
+            <!-- Countdown B -->
+            <div class="counter-box">
+              <h3>Countdown B</h3>
+              <div class="counter-value" id="consequence-value">0</div>
+              <div class="counter-buttons">
+                <button class="counter-btn-3" data-value="-3">-3</button>
+                <button class="counter-btn-2" data-value="-2">-2</button>
+                <button class="counter-btn-1" data-value="-1">-1</button>
+                <button class="counter-btn-purple-1" data-value="1">+1</button>
+                <button class="counter-btn-purple-2" data-value="2">+2</button>
+                <button class="counter-btn-purple-3" data-value="3">+3</button>
+              </div>
+              <button class="reset-btn">Reset</button>
+            </div>
+
+            <!-- Countdown C -->
+            <div class="counter-box">
+              <h3>Countdown C</h3>
+              <div class="counter-value" id="countdown-c-value">0</div>
+              <div class="counter-buttons">
+                <button class="counter-btn-3" data-value="-3">-3</button>
+                <button class="counter-btn-2" data-value="-2">-2</button>
+                <button class="counter-btn-1" data-value="-1">-1</button>
+                <button class="counter-btn-purple-1" data-value="1">+1</button>
+                <button class="counter-btn-purple-2" data-value="2">+2</button>
+                <button class="counter-btn-purple-3" data-value="3">+3</button>
+              </div>
+              <button class="reset-btn">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Countdown Section -->
     </div>
 
     <script type="module" src="js/main.js"></script>

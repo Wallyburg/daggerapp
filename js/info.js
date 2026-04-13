@@ -1,8 +1,5 @@
 export function initInfoButtons() {
-  const app = document.getElementById('app');
-  if (!app) return;  // fail gracefully if #app is missing
-
-  // Create modal overlay and content
+  // Create modal overlay and content (attach to body instead of #app)
   const overlay = document.createElement("div");
   overlay.className = "modal-overlay";
 
@@ -21,9 +18,11 @@ export function initInfoButtons() {
 
   modal.append(closeBtn, scrollableContent);
   overlay.appendChild(modal);
-  app.appendChild(overlay);
 
-  // Info message library
+  // IMPORTANT: attach to body (not #app)
+  document.body.appendChild(overlay);
+
+  // Info message library (UNCHANGED CONTENT)
   const infoMessages = {
     welcome: `License & Contribution
 
@@ -46,7 +45,6 @@ export function initInfoButtons() {
 
     DaggerApp is a personal project, created in my limited free time.
     While contributions and improvements are always welcome, I may not be quick on pull requests and issues.`,
-    //End Welcome
 
     loot: `Loot Generator
     
@@ -82,7 +80,6 @@ Shop Generator
     To use, select desired shop type and tier, then click the roll shop button.
     Clicking the clear list button will empty the list.
     Hover over list items to view tooltips.`,
-    //End Loot
 
     countdowns: `Countdowns
     
@@ -93,7 +90,6 @@ Shop Generator
     The reset button will return the counter to zero.
     
     See the official Daggerheart rules for more information on using countdowns.`,
-    //End Countdowns
 
     content: `Content
     
@@ -104,29 +100,30 @@ Shop Generator
     Only campaign frames with stat blocked items are included here.
 
     See the official Daggerheart rules for more details.`
-    //End Content
   };
 
-  // Button click handlers
+  // Button click handlers (works with new layout)
   document.querySelectorAll(".info-btn").forEach(btn => {
     btn.addEventListener("click", (e) => {
       e.stopPropagation();
+
       const infoType = btn.getAttribute("data-info");
-      if (infoMessages[infoType]) {
-        message.textContent = infoMessages[infoType];
-        overlay.classList.add("show");
-        modal.classList.add("show");
-      }
+      if (!infoMessages[infoType]) return;
+
+      message.textContent = infoMessages[infoType];
+      overlay.classList.add("show");
+      modal.classList.add("show");
     });
   });
 
-  // Close modal handler
+  // Close modal
   const closeModal = () => {
     overlay.classList.remove("show");
     modal.classList.remove("show");
   };
 
   closeBtn.addEventListener("click", closeModal);
+
   overlay.addEventListener("click", (e) => {
     if (e.target === overlay) closeModal();
   });

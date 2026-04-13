@@ -5,29 +5,24 @@ export function initLoot(data) {
   const shopResults = document.getElementById("shop-results");
 
   // Tooltip setup
-  const overlay = document.createElement("div");
-  overlay.classList.add("tooltip-overlay");
-  shopResults.appendChild(overlay);
-
   const tooltip = document.createElement("div");
-  tooltip.classList.add("tooltip");
-  shopResults.appendChild(tooltip);
+  tooltip.className = "tooltip";
+  document.body.appendChild(tooltip);
 
-  const showTooltip = (text) => {
+  const showTooltip = (text, e) => {
     tooltip.textContent = text;
-    tooltip.style.left = "20px";
-    tooltip.style.top = "65px";
-    tooltip.style.opacity = "1";
     tooltip.classList.add("show");
-    overlay.classList.add("show");
+
+    const pad = 12;
+    tooltip.style.left = `${e.clientX + pad}px`;
+    tooltip.style.top = `${e.clientY + pad}px`;
   };
 
   const hideTooltip = () => {
-    tooltip.style.opacity = "0";
     tooltip.classList.remove("show");
-    overlay.classList.remove("show");
   };
 
+  // Dice section
   const rollDice = (numDice, sides) => {
     let total = 0;
     for (let i = 0; i < numDice; i++) total += Math.floor(Math.random() * sides) + 1;
@@ -64,7 +59,7 @@ ${item.Description}`;
       li.textContent = "Unknown Item";
     }
 
-    li.addEventListener("mouseenter", () => showTooltip(tooltipText));
+    li.addEventListener("mouseenter", (e) => showTooltip(tooltipText, e));
     li.addEventListener("mouseleave", hideTooltip);
     container.appendChild(li);
   };
@@ -85,7 +80,7 @@ ${item.Description}`;
   lootButton.addEventListener("click", () => {
     lootList.innerHTML = "";
     const lootSize = parseInt(document.getElementById("loot-dropdown").value, 10);
-    const selectedTier = document.getElementById("tier-dropdown").value;
+    const selectedTier = document.getElementById("tier-dropdown-loot").value;
 
     const allGroups = [
       { name: "Armor", type: "tiered", header: "Armor & Weapons" },
@@ -147,7 +142,7 @@ ${item.Description}`;
       if (!amount) return;
       const li = document.createElement("li");
       li.textContent = `${amount} ${amount === 1 ? unit.slice(0, -1) : unit} of Gold`;
-      li.addEventListener("mouseenter", () => showTooltip("10 Handfuls = 1 Bag\n10 Bags = 1 Chest"));
+      li.addEventListener("mouseenter", (e) => showTooltip("10 Handfuls = 1 Bag\n10 Bags = 1 Chest", e));
       li.addEventListener("mouseleave", hideTooltip);
       goldUl.appendChild(li);
     };

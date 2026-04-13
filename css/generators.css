@@ -1,8 +1,26 @@
+.dropdown-row-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* allows mobile stacking */
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-block {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  position: center;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+
 .dropdown-label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   color: #f0f0f0;
 }
 
@@ -21,27 +39,40 @@ select {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
   transition: all 0.2s ease;
+  box-sizing: border-box;
 }
 
+/* =========================
+   BUTTON GROUP FIX
+========================= */
 .results-btn-group {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
+/* =========================
+   BUTTON BASE FIX
+========================= */
 .loot-results button,
 .shop-results button {
-  width: 30%;
-  padding: 6px 0;
+  padding: 6px 10px;
   font-family: Arial, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
   cursor: pointer;
   border: 1px solid #000000;
   border-radius: 4px;
+  flex: 1 1 120px; /* replaces width: 30% */
+  min-width: 120px;
+  max-width: 200px;
 }
 
+/* =========================
+   PRIMARY BUTTONS
+========================= */
 #roll-loot-btn,
 #roll-shop-btn {
   background:
@@ -51,6 +82,7 @@ select {
       rgba(255, 255, 255, 0) 60%
     ),
     #FFD93D;
+
   color: #000;
 }
 
@@ -70,6 +102,9 @@ select {
   transform: scale(0.97);
 }
 
+/* =========================
+   SECONDARY BUTTONS
+========================= */
 #clear-loot-list,
 #clear-shop-list {
   background:
@@ -79,7 +114,8 @@ select {
       rgba(255, 255, 255, 0) 60%
     ),
     #8735cf;
-  color: #000000;
+
+  color: #000;
 }
 
 #clear-loot-list:hover,
@@ -98,7 +134,13 @@ select {
   transform: scale(0.97);
 }
 
+/* =========================
+   LIST BOX (SAFE DEFAULT)
+========================= */
 #loot-listbox,
 #shop-listbox {
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
 }
