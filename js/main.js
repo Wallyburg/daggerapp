@@ -98,47 +98,122 @@ Object.entries(contentPacks).forEach(([key, pack]) => {
   });
 });
 
-
 // Scale app to fit smaller screens without scaling up beyond 100%
-function scaleApp() {
+const BASE_WIDTH = 1080;
+const BASE_HEIGHT = 690;
+
+// Base layout scale (fit-to-screen)
+let baseScale = 1;
+
+// User-controlled zoom (pinch zoom)
+let userZoom = 1;
+
+// Pan offsets
+let panX = 0;
+let panY = 0;
+
+// Render
+function render() {
   const app = document.getElementById('app');
   if (!app) return;
 
-  const viewport = window.visualViewport;
-  
-  const containerWidth = 1080;
-  const containerHeight = 690;
+  const scale = baseScale * userZoom;
 
-  const vw = viewport?.width || window.innerWidth;
-  const vh = viewport?.height || window.innerHeight;
-
-  const baseScaleX = vw / containerWidth;
-  const baseScaleY = vh / containerHeight;
-  const baseScale = Math.min(baseScaleX, baseScaleY, 1);
-
-  const zoomScale = viewport?.scale || 1;
-  const finalScale = baseScale * zoomScale;
-
-  const scaledWidth = containerWidth * baseScale;
-  const scaledHeight = containerHeight * baseScale;
-
-  const translateX = (vw - scaledWidth) / 2;
-  const translateY = (vh - scaledHeight) / 2;
-
-  app.style.transform = `translate(${translateX}px, ${translateY}px) scale(${finalScale})`;
+  app.style.transform =
+    `translate(${panX}px, ${panY}px) scale(${scale})`;
 }
 
-window.addEventListener('load', scaleApp);
-window.addEventListener('resize', scaleApp);
-window.visualViewport?.addEventListener('resize', scaleApp);
-window.addEventListener('orientationchange', () => {
-  setTimeout(scaleApp, 100);
+// Fit to Screen
+function fitToScreen() {
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+
+  baseScale = Math.min(
+    vw / BASE_WIDTH,
+    vh / BASE_HEIGHT,
+    1
+  );
+
+  const scale = baseScale * userZoom;
+
+  panX = (vw - BASE_WIDTH * scale) / 2;
+  panY = (vh - BASE_HEIGHT * scale) / 2;
+
+  render();
+}
+
+// Resize Handler
+function handleResize() {
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+
+  baseScale = Math.min(
+    vw / BASE_WIDTH,
+    vh / BASE_HEIGHT,
+    1
+  );
+
+  const scale = baseScale * userZoom;
+
+  panX = (vw - BASE_WIDTH * scale) / 2;
+  panY = (vh - BASE_HEIGHT * scale) / 2;
+
+  render();
+}
+
+// Pinch Zoom
+let lastDistance = null;
+
+function getDistance(touches) {
+  const dx = touches[0].clientX - touches[1].clientX;
+  const dy = touches[0].clientY - touches[1].clientY;
+  return Math.hypot(dx, dy);
+}
+
+document.addEventListener('touchmove', (e) => {
+  if (e.touches.length !== 2) return;
+
+  const dist = getDistance(e.touches);
+
+  if (lastDistance) {
+    const delta = dist / lastDistance;
+
+    const prevZoom = userZoom;
+
+    userZoom *= delta;
+
+    // clamp zoom
+    userZoom = Math.max(0.5, Math.min(userZoom, 3));
+
+    const prevScale = baseScale * prevZoom;
+    const newScale = baseScale * userZoom;
+
+    const focalX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+    const focalY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+
+    panX = focalX - (focalX - panX) * (newScale / prevScale);
+    panY = focalY - (focalY - panY) * (newScale / prevScale);
+
+    render();
+  }
+
+  lastDistance = dist;
+}, { passive: true });
+
+document.addEventListener('touchend', () => {
+  lastDistance = null;
 });
 
-// Call function to scale on first time page load
-scaleApp();
+// Event Listeners
+window.addEventListener('load', fitToScreen);
+window.addEventListener('resize', handleResize);
 
-// Show body after scaling to prevent flicker (Hidden in CSS by default)
+window.addEventListener('orientationchange', () => {
+  setTimeout(fitToScreen, 100);
+});
+
+// Initial Render
+fitToScreen();
 document.body.style.visibility = 'visible';
 
 // Tab Setup and Cycling
