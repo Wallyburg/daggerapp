@@ -104,44 +104,33 @@ function scaleApp() {
   const app = document.getElementById('app');
   if (!app) return;
 
+  const viewport = window.visualViewport;
+  
   const containerWidth = 1080;
   const containerHeight = 690;
 
-  // Use visualViewport when available (fixes mobile issues)
-  const vw = window.visualViewport?.width || window.innerWidth;
-  const vh = window.visualViewport?.height || window.innerHeight;
+  const vw = viewport?.width || window.innerWidth;
+  const vh = viewport?.height || window.innerHeight;
 
-  const scaleX = vw / containerWidth;
-  const scaleY = vh / containerHeight;
-  const scale = Math.min(scaleX, scaleY, 1);
+  const baseScaleX = vw / containerWidth;
+  const baseScaleY = vh / containerHeight;
+  const baseScale = Math.min(baseScaleX, baseScaleY, 1);
 
-  const scaledWidth = containerWidth * scale;
-  const scaledHeight = containerHeight * scale;
+  const zoomScale = viewport?.scale || 1;
+  const finalScale = baseScale * zoomScale;
+
+  const scaledWidth = containerWidth * baseScale;
+  const scaledHeight = containerHeight * baseScale;
 
   const translateX = (vw - scaledWidth) / 2;
   const translateY = (vh - scaledHeight) / 2;
 
-  app.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+  app.style.transform = `translate(${translateX}px, ${translateY}px) scale(${finalScale})`;
 }
 
-function shouldScale() {
-  return !window.visualViewport || window.visualViewport.scale === 1;
-}
-
-// Initial load
 window.addEventListener('load', scaleApp);
-
-// Desktop resize + mobile layout resize (but NOT zoom)
-window.addEventListener('resize', () => {
-  if (shouldScale()) scaleApp();
-});
-
-// Mobile viewport changes (like keyboard, UI chrome, etc.)
-window.visualViewport?.addEventListener('resize', () => {
-  if (shouldScale()) scaleApp();
-});
-
-// Orientation change (force it)
+window.addEventListener('resize', scaleApp);
+window.visualViewport?.addEventListener('resize', scaleApp);
 window.addEventListener('orientationchange', () => {
   setTimeout(scaleApp, 100);
 });
