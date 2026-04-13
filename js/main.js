@@ -108,8 +108,8 @@ function scaleApp() {
   const containerHeight = 690;
 
   // Use visualViewport when available (fixes mobile issues)
-  const vw = window.visualViewport?.width || window.innerWidth;
-  const vh = window.visualViewport?.height || window.innerHeight;
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
 
   const scaleX = vw / containerWidth;
   const scaleY = vh / containerHeight;
@@ -126,7 +126,6 @@ function scaleApp() {
 
 window.addEventListener('resize', scaleApp);
 window.addEventListener('load', scaleApp);
-window.visualViewport?.addEventListener('resize', scaleApp);
 
 // Call function to scale on first time page load
 scaleApp();
