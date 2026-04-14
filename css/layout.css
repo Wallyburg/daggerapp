@@ -249,7 +249,7 @@ legend {
 
 @media (max-width: 600px) and (orientation: landscape) {
   .tabs {
-    justify-content: center;   /* ✅ center when there’s room */
+    justify-content: center;   /* center when there’s room */
     overflow-x: visible;       /* stop scroll */
     flex-wrap: wrap;           /* allow natural fit */
   }
