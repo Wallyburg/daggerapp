@@ -2,14 +2,10 @@
   background: rgba(50, 50, 50, 0.75);
   border: 2px solid rgba(255, 255, 255, 0.15);
   border-radius: 6px;
-
   padding: 15px 20px;
-
   flex: 1 1 250px; /* FIX: replaces min-width trap */
   text-align: center;
-
   cursor: default;
-
   box-sizing: border-box;
 }
 
@@ -28,22 +24,15 @@
 .counter-value {
   font-family: Arial, sans-serif;
   font-size: 2em;
-
   display: inline-block;
-
   margin: 5px 0 10px 0;
-
   color: #f0f0f0;
-
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
-
   background: rgba(30, 30, 30, 0.85);
-
   /* FIX: responsive instead of fixed width */
   min-width: 50px;
   padding: 0 10px;
-
   text-align: center;
 }
 
@@ -53,7 +42,7 @@
 .counter-buttons {
   display: flex;
   justify-content: center;
-  gap: 6px;
+  gap: 2px;
   flex-wrap: wrap;
 }
 
@@ -63,20 +52,14 @@
 .counter-buttons button {
   width: 40px;
   min-width: 40px;
-
   padding: 6px 0;
-
   font-family: Arial, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
-
   cursor: pointer;
-
   border-radius: 4px;
   border: 1px solid #000;
-
   color: #000;
-
   box-sizing: border-box;
 }
 
