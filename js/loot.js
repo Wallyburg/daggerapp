@@ -9,13 +9,33 @@ export function initLoot(data) {
   tooltip.className = "tooltip";
   document.body.appendChild(tooltip);
 
-  const showTooltip = (text, e) => {
+  const showTooltip = (text, element) => {
     tooltip.textContent = text;
     tooltip.classList.add("show");
 
-    const pad = 12;
-    tooltip.style.left = `${e.clientX + pad}px`;
-    tooltip.style.top = `${e.clientY + pad}px`;
+    const pad = 8;
+
+    requestAnimationFrame(() => {
+      const rect = element.getBoundingClientRect();
+      const tipRect = tooltip.getBoundingClientRect();
+
+      const viewportWidth = window.innerWidth;
+
+      // Center horizontally above element
+      let left = rect.left + rect.width / 2 - tipRect.width / 2;
+      let top = rect.top - tipRect.height - pad;
+
+      // If not enough space above → place below
+      if (top < pad) {
+        top = rect.bottom + pad;
+      }
+
+      // Clamp horizontally
+      left = Math.max(pad, Math.min(left, viewportWidth - tipRect.width - pad));
+
+      tooltip.style.left = `${left}px`;
+      tooltip.style.top = `${top}px`;
+    });
   };
 
   const hideTooltip = () => {
@@ -59,7 +79,7 @@ ${item.Description}`;
       li.textContent = "Unknown Item";
     }
 
-    li.addEventListener("mouseenter", (e) => showTooltip(tooltipText, e));
+    li.addEventListener("mouseenter", () => showTooltip(tooltipText, li));
     li.addEventListener("mouseleave", hideTooltip);
     container.appendChild(li);
   };
@@ -142,7 +162,7 @@ ${item.Description}`;
       if (!amount) return;
       const li = document.createElement("li");
       li.textContent = `${amount} ${amount === 1 ? unit.slice(0, -1) : unit} of Gold`;
-      li.addEventListener("mouseenter", (e) => showTooltip("10 Handfuls = 1 Bag\n10 Bags = 1 Chest", e));
+      li.addEventListener("mouseenter", () => showTooltip("10 Handfuls = 1 Bag\n10 Bags = 1 Chest", li));
       li.addEventListener("mouseleave", hideTooltip);
       goldUl.appendChild(li);
     };

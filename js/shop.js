@@ -28,13 +28,32 @@ export function initShop(data) {
   tooltip.className = "tooltip";
   document.body.appendChild(tooltip);
 
-  const showTooltip = (text, e) => {
+  const showTooltip = (text, element) => {
     tooltip.textContent = text;
     tooltip.classList.add("show");
 
-    const pad = 12;
-    tooltip.style.left = `${e.clientX + pad}px`;
-    tooltip.style.top = `${e.clientY + pad}px`;
+    const pad = 8;
+
+    requestAnimationFrame(() => {
+      const rect = element.getBoundingClientRect();
+      const tipRect = tooltip.getBoundingClientRect();
+
+      const viewportWidth = window.innerWidth;
+
+      let left = rect.left + rect.width / 2 - tipRect.width / 2;
+      let top = rect.top - tipRect.height - pad;
+
+      // Flip below if needed
+      if (top < pad) {
+        top = rect.bottom + pad;
+      }
+
+      // Clamp horizontally
+      left = Math.max(pad, Math.min(left, viewportWidth - tipRect.width - pad));
+
+      tooltip.style.left = `${left}px`;
+      tooltip.style.top = `${top}px`;
+    });
   };
 
   const hideTooltip = () => {
@@ -77,7 +96,7 @@ ${item.Description}`
         : "Unknown item type";
 
     li.textContent = item.Name || item.Loot || "Unknown Item";
-    li.addEventListener("mouseenter", (e) => showTooltip(tooltipText, e));
+    li.addEventListener("mouseenter", () => showTooltip(tooltipText, li));
     li.addEventListener("mouseleave", hideTooltip);
     container.appendChild(li);
   };

@@ -19,7 +19,7 @@
 }
 
 /* =========================
-   VALUE DISPLAY (FIXED)
+   VALUE DISPLAY
 ========================= */
 .counter-value {
   font-family: Arial, sans-serif;
@@ -98,7 +98,7 @@
 }
 
 /* =========================
-   RESET BUTTON (FIXED)
+   RESET BUTTON 
 ========================= */
 .reset-btn {
   width: auto;        /* FIX */
@@ -145,7 +145,7 @@
 }
 
 /* =========================
-   MOBILE FIX
+   MOBILE SCALING
 ========================= */
 @media (max-width: 700px) {
   .counter-box {
