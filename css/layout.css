@@ -1,7 +1,7 @@
 .page {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 15rem auto 0 auto;
 }
 
 body {
@@ -10,8 +10,8 @@ body {
   min-height: 100vh;
   background-color: #121212;
   /* IMPORTANT: remove flex centering (breaks mobile) */
-  display: grid;
-  align-items: center;
+  display: block;
+  overflow-x: hidden;
 }
 
 /* background stays identical */
@@ -200,6 +200,9 @@ legend {
    MOBILE SCALING
 ========================= */
 @media (max-width: 600px) {
+  .page {
+    margin: 0 auto;
+  }
 
   .section-box {
     margin: 8px;
@@ -247,7 +250,11 @@ legend {
   }
 }
 
-@media (max-width: 600px) and (orientation: landscape) {
+@media (max-width: 950px) and (orientation: landscape) {
+  .page {
+    margin: 0 auto;
+  }
+
   .tabs {
     justify-content: center;   /* center when there’s room */
     overflow-x: visible;       /* stop scroll */
