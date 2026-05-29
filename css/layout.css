@@ -10,8 +10,8 @@ body {
   min-height: 100vh;
   background-color: #121212;
   /* IMPORTANT: remove flex centering (breaks mobile) */
-  display: block;
-  overflow-x: hidden;
+  display: grid;
+  align-items: center;
 }
 
 /* background stays identical */
