@@ -1,0 +1,1939 @@
+{
+  "Armor": [
+    {
+      "Tier": "1",
+      "Name": "Mage Robes",
+      "Feature": "Enchanted: Gain a bonus to your damage thresholds equal to your Spellcast trait.",
+      "Thresholds": "4 / 10",
+      "Score": "2"
+    },
+    {
+      "Tier": "1",
+      "Name": "Brigandine Armor",
+      "Feature": "Lined: Mark a Stress to negate Minor damage.",
+      "Thresholds": "6 / 12",
+      "Score": "3"
+    },
+    {
+      "Tier": "1",
+      "Name": "Scale Mail Armor",
+      "Feature": "Cumbersome: -1 to Finesse",
+      "Thresholds": "7 / 14",
+      "Score": "3"
+    },
+    {
+      "Tier": "1",
+      "Name": "Banded Armor",
+      "Feature": "Bulky: -1 to Evasion; when you take Severe damage, you must mark a Stress.",
+      "Thresholds": "8 / 16",
+      "Score": "4"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Mage Robes",
+      "Feature": "Enchanted: Gain a bonus to your damage thresholds equal to your Spellcast trait.",
+      "Thresholds": "6 / 15",
+      "Score": "3"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Brigandine Armor",
+      "Feature": "Lined: Mark a Stress to negate Minor damage.",
+      "Thresholds": "9 / 19",
+      "Score": "4"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Scale Mail Armor",
+      "Feature": "Cumbersome: -1 to Finesse",
+      "Thresholds": "11 / 23",
+      "Score": "4"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Banded Armor",
+      "Feature": "Bulky: -1 to Evasion; when you take Severe damage, you must mark a Stress.",
+      "Thresholds": "13 / 27",
+      "Score": "5"
+    },
+    {
+      "Tier": "2",
+      "Name": "Enchanter's Robes",
+      "Feature": "Mnemonic: Once per scene, you can recall a domain card from your vault without paying its Recall Cost.",
+      "Thresholds": "9 / 20",
+      "Score": "4"
+    },
+    {
+      "Tier": "2",
+      "Name": "Hawkguard's Mantle",
+      "Feature": "Gliding: You can glide up to Far range and are immune to damage from falling.",
+      "Thresholds": "9 / 20",
+      "Score": "4"
+    },
+    {
+      "Tier": "2",
+      "Name": "Spidersilk Tunic",
+      "Feature": "Wall-Crawling: +1 Evasion; you can walk on walls as easily as on the ground.",
+      "Thresholds": "9 / 20",
+      "Score": "4"
+    },
+    {
+      "Tier": "2",
+      "Name": "Stormthread Habit",
+      "Feature": "Absorbing: Once per scene when you take magic damage, you can clear an Armor Slot.",
+      "Thresholds": "9 / 20",
+      "Score": "4"
+    },
+    {
+      "Tier": "2",
+      "Name": "Wyrdwood Splint Armor",
+      "Feature": "Quick-Striding: You can't be Restrained and can move up to Far range as part of an action roll.",
+      "Thresholds": "10 / 21",
+      "Score": "5"
+    },
+    {
+      "Tier": "2",
+      "Name": "Trollhide Cuirass",
+      "Feature": "Self-Healing: When you take a rest, clear an Armor Slot.",
+      "Thresholds": "11 / 23",
+      "Score": "5"
+    },
+    {
+      "Tier": "2",
+      "Name": "Gilded Sunplate",
+      "Feature": "Resplendent: Once per scene when you spend Hope, you can clear an Armor Slot.",
+      "Thresholds": "12 / 26",
+      "Score": "5"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Mage Robes",
+      "Feature": "Enchanted: Gain a bonus to your damage thresholds equal to your Spellcast trait.",
+      "Thresholds": "8 / 22",
+      "Score": "4"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Brigandine Armor",
+      "Feature": "Lined: Mark a Stress to negate Minor damage.",
+      "Thresholds": "11 / 26",
+      "Score": "5"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Scale Mail Armor",
+      "Feature": "Cumbersome: -1 to Finesse",
+      "Thresholds": "13 / 30",
+      "Score": "5"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Banded Armor",
+      "Feature": "Bulky: -1 to Evasion; when you take Severe damage, you must mark a Stress.",
+      "Thresholds": "15 / 34",
+      "Score": "6"
+    },
+    {
+      "Tier": "3",
+      "Name": "Granminster's Finery",
+      "Feature": "Magnificent: Gain a bonus to your Armor Score equal to your Presence.",
+      "Thresholds": "11 / 27",
+      "Score": "2"
+    },
+    {
+      "Tier": "3",
+      "Name": "Astral Raiment",
+      "Feature": "Stellar: Mark a Stress to gain advantage on a Spellcast roll.",
+      "Thresholds": "11 / 27",
+      "Score": "5"
+    },
+    {
+      "Tier": "3",
+      "Name": "Cloverweave Cloak",
+      "Feature": "Fortune-Favored: Once per scene, you can change a failure with Hope into a success with Fear.",
+      "Thresholds": "11 / 27",
+      "Score": "5"
+    },
+    {
+      "Tier": "3",
+      "Name": "Skywarden's Lamellar",
+      "Feature": "Vigilant: +2 to Evasion",
+      "Thresholds": "11 / 27",
+      "Score": "5"
+    },
+    {
+      "Tier": "3",
+      "Name": "Bloodstone Plate Armor",
+      "Feature": "Bloodthirsty: When you critically succeed on a weapon attack within Melee range, clear a Hit Point.",
+      "Thresholds": "13 / 35",
+      "Score": "6"
+    },
+    {
+      "Tier": "3",
+      "Name": "Deep-Forged Coral Armor",
+      "Feature": "Aquatic: You can breathe underwater and gain advantage on Agility Rolls while submerged.",
+      "Thresholds": "13 / 35",
+      "Score": "6"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Mage Robes",
+      "Feature": "Enchanted: Gain a bonus to your damage thresholds equal to your Spellcast trait.",
+      "Thresholds": "10 / 31",
+      "Score": "5"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Brigandine Armor",
+      "Feature": "Lined: Mark a Stress to negate Minor damage.",
+      "Thresholds": "13 / 35",
+      "Score": "6"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Scale Mail Armor",
+      "Feature": "Cumbersome: -1 to Finesse",
+      "Thresholds": "15 / 39",
+      "Score": "6"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Banded Armor",
+      "Feature": "Bulky: -1 to Evasion; when you take Severe damage, you must mark a Stress.",
+      "Thresholds": "17 / 43",
+      "Score": "7"
+    },
+    {
+      "Tier": "4",
+      "Name": "Darkweave Shroud",
+      "Feature": "Ghostwalker: Once per rest, mark a Stress to move up to Close range through solid objects.",
+      "Thresholds": "13 / 36",
+      "Score": "5"
+    },
+    {
+      "Tier": "4",
+      "Name": "Godbound Laminar",
+      "Feature": "Divine: When you mark an Armor Slot, gain a Hope.",
+      "Thresholds": "13 / 36",
+      "Score": "6"
+    },
+    {
+      "Tier": "4",
+      "Name": "Circle-Forged Dreadplate",
+      "Feature": "Accursed: When you mark any number of Hit Points from an attack, roll a d4. \nOn a result of 4, the attacker must mark an equal number of Stress.",
+      "Thresholds": "14 / 38",
+      "Score": "6"
+    },
+    {
+      "Tier": "4",
+      "Name": "Rune-Forged Exosuit",
+      "Feature": "Attuned: The maximum number of domain cards in your loadout is reduced by one, but you gain a bonus to your damage thresholds equal to your tier.",
+      "Thresholds": "12 / 39",
+      "Score": "7"
+    },
+    {
+      "Tier": "4",
+      "Name": "Hallowed Heroplate",
+      "Feature": "Blessed: Once per long rest, you can spend any number of Hope before you make the Risk It All death move. \nYou gain a bonus to the result of your Hope Die equal to the number of Hope spent.",
+      "Thresholds": "13 / 35",
+      "Score": "7"
+    },
+    {
+      "Tier": "4",
+      "Name": "Resonant Harness",
+      "Feature": "Vitreous: When you would take Severe or greater damage, you can mark 2 Armor Slots to negate that damage. \nIf you do, you gain a -5 penalty to your damage thresholds until you choose to repair your armor as a downtime move.",
+      "Thresholds": "15 / 40",
+      "Score": "7"
+    }
+  ],
+  "Items": [
+    {
+      "Roll": "1",
+      "Loot": "Caltrops",
+      "Description": "You can spread these caltrops in a Very Close area around you. \nA creature hastening through that area must mark a Stress."
+    },
+    {
+      "Roll": "2",
+      "Loot": "Grapnel",
+      "Description": "You gain advantage on action rolls to climb sheer surfaces."
+    },
+    {
+      "Roll": "3",
+      "Loot": "Ball Bearings",
+      "Description": "This pouch contains perfectly smooth metal spheres."
+    },
+    {
+      "Roll": "4",
+      "Loot": "Box of Dragon Dust",
+      "Description": "This snuffbox is filled with combustible powder."
+    },
+    {
+      "Roll": "5",
+      "Loot": "Nighthawker's Ring",
+      "Description": "Spend a Hope to activate the gemstone in this ring until the end of the scene. \nWhile active, the gemstone changes color to indicate the wearer's proximity to hidden treasure: warm colors for near, cool colors for far."
+    },
+    {
+      "Roll": "6",
+      "Loot": "Elven Spyglass",
+      "Description": "You can use this spyglass to magnify your vision a hundredfold."
+    },
+    {
+      "Roll": "7",
+      "Loot": "Gourmet Granules",
+      "Description": "This savory powder makes any food it's sprinkled on delicious and healthy, no matter how bland or rotten it is."
+    },
+    {
+      "Roll": "8",
+      "Loot": "Collapsible Pole",
+      "Description": "You can break down this 18-foot pole into six interlinked 3-foot segments."
+    },
+    {
+      "Roll": "9",
+      "Loot": "Blackwing Quill",
+      "Description": "This writing quill never runs out of ink or needs to be sharpened."
+    },
+    {
+      "Roll": "10",
+      "Loot": "Silee's Folding Knife",
+      "Description": "This 3-inch blade has an edge that easily cuts through anything except the handle it's stored in."
+    },
+    {
+      "Roll": "11",
+      "Loot": "Windup Toy",
+      "Description": "This small mechanical device is shaped like a strixwolf pup and can be programmed to perform simple tricks."
+    },
+    {
+      "Roll": "12",
+      "Loot": "Loaded Dice",
+      "Description": "You can choose what result this set of weighted dice rolls with a successful Finesse Roll (14). \nIf you roll with Fear, anyone watching knows the dice are loaded."
+    },
+    {
+      "Roll": "13",
+      "Loot": "Hollowbark Horn",
+      "Description": "You can blow this horn to summon a small woodland creature to perform a simple task."
+    },
+    {
+      "Roll": "14",
+      "Loot": "Self-Tying Rope",
+      "Description": "You can command this rope to tie or untie itself."
+    },
+    {
+      "Roll": "15",
+      "Loot": "Thief's Compass",
+      "Description": "This compass points the way toward the nearest exit while indoors and the closest entrance while outdoors."
+    },
+    {
+      "Roll": "16",
+      "Loot": "Traveler's Bell",
+      "Description": "Once per long rest, you can ring this bell to magically open the shortest safe path through rough terrain for 1 hour."
+    },
+    {
+      "Roll": "17",
+      "Loot": "Mandragorian Torch",
+      "Description": "This torch gives off light only the bearer can see."
+    },
+    {
+      "Roll": "18",
+      "Loot": "Boots of Supple Mystique",
+      "Description": "While wearing these boots, you don't leave tracks or footprints."
+    },
+    {
+      "Roll": "19",
+      "Loot": "Zephyr's Jar",
+      "Description": "You can open this empty jar during inclement weather to capture the storm and leave behind clear skies. \nThe storm remains inside until unleashed by reopening the jar."
+    },
+    {
+      "Roll": "20",
+      "Loot": "Returning Ring",
+      "Description": "When you throw your primary weapon while wearing this ring, the weapon appears in your hand immediately after the attack."
+    },
+    {
+      "Roll": "21",
+      "Loot": "Kingfisher's Net",
+      "Description": "Once per long rest, you can use this net to scoop one live fish out of any amount of water, no matter how unlikely it is for that water to have fish in it."
+    },
+    {
+      "Roll": "22",
+      "Loot": "Titan's Girdle",
+      "Description": "Once per scene, you can activate this girdle to gain a +1 bonus to your Proficiency for your next attack."
+    },
+    {
+      "Roll": "23",
+      "Loot": "Iron Veil",
+      "Description": "This chain-link head covering renders the wearer invisible to fey creatures."
+    },
+    {
+      "Roll": "24",
+      "Loot": "Furball Bag",
+      "Description": "Once per rest, you can produce 2d20 harmless, cat-sized fur creatures of indeterminate origin and species from this bag."
+    },
+    {
+      "Roll": "25",
+      "Loot": "Whisperstep Anklet",
+      "Description": "This anklet makes your steps silent as long as you don't move faster than walking speed."
+    },
+    {
+      "Roll": "26",
+      "Loot": "Enchanter's Loupe",
+      "Description": "You can use this loupe to see through illusions and enchantments."
+    },
+    {
+      "Roll": "27",
+      "Loot": "Escher's Mirrorball",
+      "Description": "Once per long rest, you can command this fist-sized silver orb to capture an omnidirectional image of its surroundings on its surface. \nThis image lasts until your next long rest."
+    },
+    {
+      "Roll": "28",
+      "Loot": "Cheater's Coin",
+      "Description": "When you flip this coin, you can spend a Hope to determine which side it lands on."
+    },
+    {
+      "Roll": "29",
+      "Loot": "Gravewarden's Bell",
+      "Description": "This bell rings when a ghost or undead creature moves within Far range of it."
+    },
+    {
+      "Roll": "30",
+      "Loot": "Reliquary of the Sightless Saint",
+      "Description": "You gain a +1 bonus to your Hope Die when you make the Risk It All death move."
+    },
+    {
+      "Roll": "31",
+      "Loot": "Map of Revelation",
+      "Description": "You can attune this map to one creature at a time. \nThe map always shows the attuned creature's location."
+    },
+    {
+      "Roll": "32",
+      "Loot": "Dagginae's Obsidian Slate",
+      "Description": "This wafer-thin sheet of volcanic glass is used by archivists to keep notes. \nAny information etched onto its surface disappears but can be recalled via a command you set."
+    },
+    {
+      "Roll": "33",
+      "Loot": "Gadiman's Backpack",
+      "Description": "Once per rest, you can spend a Hope to conjure a mundane item up to a cubic foot in size inside this satchel."
+    },
+    {
+      "Roll": "34",
+      "Loot": "Eclipse Coin",
+      "Description": "Once per rest, flip a coin. \nOn heads, you gain a +1 bonus to attack rolls until your next successful attack. \nOn tails, you gain +1 to your Evasion until an attack fails against you."
+    },
+    {
+      "Roll": "35",
+      "Loot": "Sorcerer's Hat",
+      "Description": "This conical blue hat is covered in silver stars. \nOnce per rest, you can cast a spell from your vault with a Recall Cost equal to or less than your tier. \nThis doesn't work for permanently vaulted cards."
+    },
+    {
+      "Roll": "36",
+      "Loot": "Ghoulskin Gloves",
+      "Description": "When you attack with a physical weapon while wearing these gloves, the damage is considered both physical and magic."
+    },
+    {
+      "Roll": "37",
+      "Loot": "Gloves of Alacrity",
+      "Description": "When you would mark a Stress to reload a weapon, you don't mark it."
+    },
+    {
+      "Roll": "38",
+      "Loot": "Insomniac's Periapt",
+      "Description": "When you take a rest without clearing Hit Points or Stress, you gain a +2 bonus to attack and damage rolls until your next rest."
+    },
+    {
+      "Roll": "39",
+      "Loot": "Wildrider's Saddle",
+      "Description": "This saddle grants any animal it's strapped onto the ability to understand their rider's commands."
+    },
+    {
+      "Roll": "40",
+      "Loot": "Soul-Twin Circlets",
+      "Description": "Two creatures can wear this pair of circlets. \nYou can spend a Hope to switch places with whoever is wearing the other circlet."
+    },
+    {
+      "Roll": "41",
+      "Loot": "Namer's Oracle",
+      "Description": "Once per session, you can roll this set of runic dice to reveal the full name of the last person you touched."
+    },
+    {
+      "Roll": "42",
+      "Loot": "Crucible Frames",
+      "Description": "These eyeglasses reveal weak points in objects and creatures. \nThree times per rest, you can spend a Hope to gain advantage on an attack roll."
+    },
+    {
+      "Roll": "43",
+      "Loot": "Two-Faced Aegis Brooch",
+      "Description": "Once per rest, flip a coin. \nOn heads, you become immune to the next physical damage you take. \nOn tails, you become immune to the next magic damage you take."
+    },
+    {
+      "Roll": "44",
+      "Loot": "Knockback Bracelets",
+      "Description": "On a successful weapon attack, you can knock your target back up to Close range from their location."
+    },
+    {
+      "Roll": "45",
+      "Loot": "Force Disc",
+      "Description": "This shimmering two-dimensional disc of magical force has a 4-foot diameter and is magically tethered to a pebble. \nThe disc always floats 3 feet north of, and at the same elevation as, the pebble. \nThe pebble has a mass equal to one-hundredth of the total mass carried by the disc."
+    },
+    {
+      "Roll": "46",
+      "Loot": "Molepaw Mittens",
+      "Description": "Spend a Hope to swim through earth as if it were water for the next 10 minutes."
+    },
+    {
+      "Roll": "47",
+      "Loot": "Timekeeper's Pendant",
+      "Description": "You can choose an additional downtime move each rest."
+    },
+    {
+      "Roll": "48",
+      "Loot": "Iron Dagger Pendant",
+      "Description": "Once per long rest, you can spend a Hope to tell the pendant a creature's name. \nThe pendant gently pulls you toward that creature's current location until your next long rest."
+    },
+    {
+      "Roll": "49",
+      "Loot": "Collar of Ascendancy",
+      "Description": "An animal who wears this collar gains the ability to speak and understand common speech."
+    },
+    {
+      "Roll": "50",
+      "Loot": "Temporal Sanctuary",
+      "Description": "A PC who takes a rest in the temporal sanctuary can choose an additional downtime move."
+    },
+    {
+      "Roll": "51",
+      "Loot": "Hero's Helm",
+      "Description": "When you critically succeed on an attack, all allies within Close range gain a Hope."
+    },
+    {
+      "Roll": "52",
+      "Loot": "Rings of Friendship",
+      "Description": "Two creatures can wear this pair of rings shaped like coiled snakes. \nYou can spend the Hope of whoever is wearing the other ring (with their permission) as if it were your own."
+    },
+    {
+      "Roll": "53",
+      "Loot": "Rings of Camaraderie",
+      "Description": "Two creatures can wear this pair of wooden rings. \nYou can mark the Stress of whoever is wearing the other ring (with their permission) as if it were your own."
+    },
+    {
+      "Roll": "54",
+      "Loot": "Rings of Alliance",
+      "Description": "Two creatures can wear this pair of rose gold rings. \nOnce per session, you can initiate a Tag Team Roll with whoever is wearing the other ring without spending Hope or counting against your session limit for Tag Team Rolls."
+    },
+    {
+      "Roll": "55",
+      "Loot": "Phobophage's Circlet",
+      "Description": "When the GM spends a Fear, roll a d4. \nOnce per scene on a result of 4, you clear a Stress."
+    },
+    {
+      "Roll": "56",
+      "Loot": "Quillshawl",
+      "Description": "If an adversary attacks you within Melee range, they must succeed on a Reaction Roll (12) or mark a Hit Point."
+    },
+    {
+      "Roll": "57",
+      "Loot": "Warp Pendant",
+      "Description": "Once per rest, mark a Stress to teleport to a location you can clearly see."
+    },
+    {
+      "Roll": "58",
+      "Loot": "Portal Frames",
+      "Description": "This pair of small ornate frames, one red and one blue, are connected. \nAnything that passes into one exits from the other."
+    },
+    {
+      "Roll": "59",
+      "Loot": "Communion Relic",
+      "Description": "Once per rest, you can spend a Hope to use an ally's Experience as if it were your own. \nYou can carry only one relic."
+    },
+    {
+      "Roll": "60",
+      "Loot": "Augur's Relic",
+      "Description": "Once per long rest, you can activate your Hope feature without spending Hope. \nYou can carry only one relic."
+    }
+  ],
+  "Magic": [
+    {
+      "Tier": "1",
+      "Name": "Brightsword",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d10+3",
+      "Burden": "2H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "1",
+      "Name": "Shadowblade",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d8",
+      "Burden": "1H",
+      "Feature": "Otherworldly: On a successful attack, you can deal physical or magic damage."
+    },
+    {
+      "Tier": "1",
+      "Name": "Enchanted Chakram",
+      "Trait": "Finesse",
+      "Range": "Close",
+      "Damage": "d6+1",
+      "Burden": "1H",
+      "Feature": "Ricochet: When you throw this weapon, it returns to your hand. \nWhen you make an attack, you can mark a Stress to target another creature within Very Close range of the first target with that attack."
+    },
+    {
+      "Tier": "1",
+      "Name": "Casting Dagger",
+      "Trait": "Instinct",
+      "Range": "Close",
+      "Damage": "d6",
+      "Burden": "1H",
+      "Feature": "Versatile: This weapon can also be used with these statistics — Instinct, Melee, d8."
+    },
+    {
+      "Tier": "1",
+      "Name": "Runelock Pistol",
+      "Trait": "Knowledge",
+      "Range": "Far",
+      "Damage": "d6+3",
+      "Burden": "1H",
+      "Feature": "Reloading: After you make an attack, roll a d6. \nOn a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+    },
+    {
+      "Tier": "1",
+      "Name": "Arcane Rifle",
+      "Trait": "Agility",
+      "Range": "Very Far",
+      "Damage": "d10+3",
+      "Burden": "2H",
+      "Feature": "Aimed: Your attack has disadvantage if the target is within Very Close range of you or within Melee range of one of your allies. \nYou can mark a Stress to ignore this penalty."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Brightsword",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d10+6",
+      "Burden": "2H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Shadowblade",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d8+3",
+      "Burden": "1H",
+      "Feature": "Otherworldly: On a successful attack, you can deal physical or magic damage."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Enchanted Chakram",
+      "Trait": "Finesse",
+      "Range": "Close",
+      "Damage": "d6+4",
+      "Burden": "1H",
+      "Feature": "Ricochet: When you throw this weapon, it returns to your hand. \nWhen you make an attack, you can mark a Stress to target another creature within Very Close range of the first target with that attack."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Casting Dagger",
+      "Trait": "Instinct",
+      "Range": "Close",
+      "Damage": "d6+3",
+      "Burden": "1H",
+      "Feature": "Versatile: This weapon can also be used with these statistics — Instinct, Melee, d8+3."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Runelock Pistol",
+      "Trait": "Knowledge",
+      "Range": "Far",
+      "Damage": "d6+6",
+      "Burden": "1H",
+      "Feature": "Reloading: After you make an attack, roll a d6. \nOn a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Arcane Rifle",
+      "Trait": "Agility",
+      "Range": "Very Far",
+      "Damage": "d10+6",
+      "Burden": "2H",
+      "Feature": "Aimed: Your attack has disadvantage if the target is within Very Close range of you or within Melee range of one of your allies. \nYou can mark a Stress to ignore this penalty."
+    },
+    {
+      "Tier": "2",
+      "Name": "Enchanted Shillelagh",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+3",
+      "Burden": "1H",
+      "Feature": "Protective: +1 to your Armor Score"
+    },
+    {
+      "Tier": "2",
+      "Name": "Displacement Razor",
+      "Trait": "Finesse",
+      "Range": "Melee",
+      "Damage": "d8+3",
+      "Burden": "2H",
+      "Feature": "Omnipresent: You can make attacks against targets within Very Far range, but must do so with disadvantage."
+    },
+    {
+      "Tier": "2",
+      "Name": "Spellbound Bangles",
+      "Trait": "Knowledge",
+      "Range": "Melee",
+      "Damage": "d10+6",
+      "Burden": "2H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "2",
+      "Name": "Fury Gem",
+      "Trait": "Instinct",
+      "Range": "Close",
+      "Damage": "d8+3",
+      "Burden": "1H",
+      "Feature": "Burning: When you roll the maximum result on a damage die, the target must mark a Stress."
+    },
+    {
+      "Tier": "2",
+      "Name": "Enchanted Lute",
+      "Trait": "Presence",
+      "Range": "Close",
+      "Damage": "d8+3",
+      "Burden": "2H",
+      "Feature": "Invigorating: On a successful attack, roll a d4. \nOn a result of 4, clear a Stress."
+    },
+    {
+      "Tier": "2",
+      "Name": "Splintershaft Bow",
+      "Trait": "Agility",
+      "Range": "Far",
+      "Damage": "d6+6",
+      "Burden": "2H",
+      "Feature": "Volleyed: Spend a Hope to target a group of creatures within range. \nTargets you succeed against take half damage."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Brightsword",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d10+9",
+      "Burden": "2H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Shadowblade",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d8+6",
+      "Burden": "1H",
+      "Feature": "Otherworldly: On a successful attack, you can deal physical or magic damage."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Enchanted Chakram",
+      "Trait": "Finesse",
+      "Range": "Close",
+      "Damage": "d6+7",
+      "Burden": "1H",
+      "Feature": "Ricochet: When you throw this weapon, it returns to your hand. \nWhen you make an attack, you can mark a Stress to target another creature within Very Close range of the first target with that attack."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Casting Dagger",
+      "Trait": "Instinct",
+      "Range": "Close",
+      "Damage": "d6+6",
+      "Burden": "1H",
+      "Feature": "Versatile: This weapon can also be used with these statistics — Instinct, Melee, d8+6."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Runelock Pistol",
+      "Trait": "Knowledge",
+      "Range": "Far",
+      "Damage": "d6+9",
+      "Burden": "1H",
+      "Feature": "Reloading: After you make an attack, roll a d6. \nOn a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Arcane Rifle",
+      "Trait": "Agility",
+      "Range": "Very Far",
+      "Damage": "d10+9",
+      "Burden": "2H",
+      "Feature": "Aimed: Your attack has disadvantage if the target is within Very Close range of you or within Melee range of one of your allies. \nYou can mark a Stress to ignore this penalty."
+    },
+    {
+      "Tier": "3",
+      "Name": "Rocket Maul",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d10+7",
+      "Burden": "2H",
+      "Feature": "Concussive: On a successful attack, you can spend a Hope to knock the target back to Far range."
+    },
+    {
+      "Tier": "3",
+      "Name": "Crystal Spear",
+      "Trait": "Finesse",
+      "Range": "Very Close",
+      "Damage": "d10+6",
+      "Burden": "1H",
+      "Feature": "Piercing: Damage dealt with this weapon treats the target's Major threshold as having a −2 penalty."
+    },
+    {
+      "Tier": "3",
+      "Name": "Arc Wand",
+      "Trait": "Presence",
+      "Range": "Close",
+      "Damage": "d8+6",
+      "Burden": "1H",
+      "Feature": "Bouncing: Mark any number of Stress to target that many additional creatures in range of the attack."
+    },
+    {
+      "Tier": "3",
+      "Name": "Rime Scepter",
+      "Trait": "Knowledge",
+      "Range": "Close",
+      "Damage": "d8+6",
+      "Burden": "1H",
+      "Feature": "Freezing: When an attack from this weapon causes a target to mark 2 or more HP, they become temporarily Restrained."
+    },
+    {
+      "Tier": "3",
+      "Name": "Gunblade",
+      "Trait": "Agility",
+      "Range": "Far",
+      "Damage": "d6+6",
+      "Burden": "1H",
+      "Feature": "Versatile: This weapon can also be used with these statistics — Agility, Melee, d8+6 phy."
+    },
+    {
+      "Tier": "3",
+      "Name": "Staff of Augma",
+      "Trait": "Instinct",
+      "Range": "Far",
+      "Damage": "d6+7",
+      "Burden": "1H",
+      "Feature": "Catalytic: On a successful attack, you can mark a Stress to give an ally within Close range a +3 bonus to their next attack roll."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Brightsword",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d10+12",
+      "Burden": "2H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Shadowblade",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d8+9",
+      "Burden": "1H",
+      "Feature": "Otherworldly: On a successful attack, you can deal physical or magic damage."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Enchanted Chakram",
+      "Trait": "Finesse",
+      "Range": "Close",
+      "Damage": "d6+10",
+      "Burden": "1H",
+      "Feature": "Ricochet: When you throw this weapon, it returns to your hand. \nWhen you make an attack, you can mark a Stress to target another creature within Very Close range of the first target with that attack."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Casting Dagger",
+      "Trait": "Instinct",
+      "Range": "Close",
+      "Damage": "d6+9",
+      "Burden": "1H",
+      "Feature": "Versatile: This weapon can also be used with these statistics — Instinct, Melee, d8+9."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Runelock Pistol",
+      "Trait": "Knowledge",
+      "Range": "Far",
+      "Damage": "d6+12",
+      "Burden": "1H",
+      "Feature": "Reloading: After you make an attack, roll a d6. \nOn a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Arcane Rifle",
+      "Trait": "Agility",
+      "Range": "Very Far",
+      "Damage": "d10+12",
+      "Burden": "2H",
+      "Feature": "Aimed: Your attack has disadvantage if the target is within Very Close range of you or within Melee range of one of your allies. \nYou can mark a Stress to ignore this penalty."
+    },
+    {
+      "Tier": "4",
+      "Name": "Starmetal Blade",
+      "Trait": "Agility",
+      "Range": "Melee",
+      "Damage": "d8+10",
+      "Burden": "1H",
+      "Feature": "Serrated: When you roll a 1 on a damage die, it deals 8 damage instead."
+    },
+    {
+      "Tier": "4",
+      "Name": "Adder's Fang",
+      "Trait": "Finesse",
+      "Range": "Melee",
+      "Damage": "d8+9",
+      "Burden": "1H",
+      "Feature": "Venomous: When you deal Major or greater damage with this weapon, the target becomes temporarily Vulnerable."
+    },
+    {
+      "Tier": "4",
+      "Name": "Demon's Edge",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d8+10",
+      "Burden": "1H",
+      "Feature": "Disturbing: When you defeat a creature with this weapon, all adversaries within Close range must mark a Stress."
+    },
+    {
+      "Tier": "4",
+      "Name": "Storm God's Greataxe",
+      "Trait": "Strength",
+      "Range": "Very Close",
+      "Damage": "d10+9",
+      "Burden": "2H",
+      "Feature": "Bouncing: Mark any number of Stress to target that many additional creatures in range of the attack."
+    },
+    {
+      "Tier": "4",
+      "Name": "Ethereal Zweihänder",
+      "Trait": "Instinct",
+      "Range": "Very Close",
+      "Damage": "d10+9",
+      "Burden": "2H",
+      "Feature": "Ethereal: You must mark a Stress to conjure this weapon. \nIt lasts until the end of the scene."
+    },
+    {
+      "Tier": "4",
+      "Name": "Gravity Arbalest",
+      "Trait": "Knowledge",
+      "Range": "Far",
+      "Damage": "d8+6",
+      "Burden": "2H",
+      "Feature": "Magnetic: When you make an attack with this weapon, you can spend a Hope to force all adversaries within Very Close range of the target to make a Reaction Roll (16). \nCreatures who fail must mark a Stress and are pulled into Melee range of the target."
+    }
+  ],
+  "Physical": [
+    {
+      "Tier": "1",
+      "Name": "Katana",
+      "Trait": "Agility",
+      "Range": "Melee",
+      "Damage": "d10+3",
+      "Burden": "2H",
+      "Feature": "Quick: When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    {
+      "Tier": "1",
+      "Name": "Brass Knuckles",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+1",
+      "Burden": "1H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "1",
+      "Name": "Scimitar",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d8+1",
+      "Burden": "1H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "1",
+      "Name": "Twisted Dagger",
+      "Trait": "Knowledge",
+      "Range": "Melee",
+      "Damage": "d8",
+      "Burden": "1H",
+      "Feature": "Piercing: Damage dealt with this weapon treats the target's Major threshold as having a -2 penalty."
+    },
+    {
+      "Tier": "1",
+      "Name": "Whipsword",
+      "Trait": "Finesse",
+      "Range": "Very Close",
+      "Damage": "d8",
+      "Burden": "1H",
+      "Feature": "Versatile: This weapon can also be used with these statistics — Finesse, Melee, d10."
+    },
+    {
+      "Tier": "1",
+      "Name": "Rope Dart",
+      "Trait": "Instinct",
+      "Range": "Close",
+      "Damage": "d6+1",
+      "Burden": "2H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Katana",
+      "Trait": "Agility",
+      "Range": "Melee",
+      "Damage": "d10+6",
+      "Burden": "2H",
+      "Feature": "Quick: When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Brass Knuckles",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+4",
+      "Burden": "1H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Scimitar",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d8+4",
+      "Burden": "1H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Twisted Dagger",
+      "Trait": "Knowledge",
+      "Range": "Melee",
+      "Damage": "d8+3",
+      "Burden": "1H",
+      "Feature": "Piercing: Damage dealt with this weapon treats the target's Major threshold as having a -2 penalty."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Whipsword",
+      "Trait": "Finesse",
+      "Range": "Very Close",
+      "Damage": "d8+3",
+      "Burden": "1H",
+      "Feature": "Versatile: This weapon can also be used with these statistics — Finesse, Melee, d10+3."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Rope Dart",
+      "Trait": "Instinct",
+      "Range": "Close",
+      "Damage": "d6+4",
+      "Burden": "2H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "2",
+      "Name": "War Pick",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+3",
+      "Burden": "1H",
+      "Feature": "Deadly: When you deal Severe damage, the target must mark an additional HP."
+    },
+    {
+      "Tier": "2",
+      "Name": "Cane Sword",
+      "Trait": "Finesse",
+      "Range": "Melee",
+      "Damage": "d8+4",
+      "Burden": "1H",
+      "Feature": "Retractable: The blade can be hidden in the cane to avoid detection."
+    },
+    {
+      "Tier": "2",
+      "Name": "Bladed Fan",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d8+3",
+      "Burden": "1H",
+      "Feature": "Parry: When you are attacked, roll this weapon's damage dice. If any of the attacker's damage dice rolled the same value as your dice, the matching results are discarded from the attacker's damage dice before the damage you take is totaled."
+    },
+    {
+      "Tier": "2",
+      "Name": "Cyrurgien's Scalpel",
+      "Trait": "Knowledge",
+      "Range": "Melee",
+      "Damage": "d8+3",
+      "Burden": "1H",
+      "Feature": "Scary: On a successful attack, the target must mark a Stress."
+    },
+    {
+      "Tier": "2",
+      "Name": "Lance",
+      "Trait": "Instinct",
+      "Range": "Very Close",
+      "Damage": "d10+5",
+      "Burden": "2H",
+      "Feature": "Cumbersome: -1 to Finesse"
+    },
+    {
+      "Tier": "2",
+      "Name": "Javelins",
+      "Trait": "Agility",
+      "Range": "Very Close",
+      "Damage": "d6+6",
+      "Burden": "1H",
+      "Feature": "Stockpiled: You can throw this weapon at a target within Far range by making an attack roll using Agility without having to retrieve it, as you always have another one on hand."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Katana",
+      "Trait": "Agility",
+      "Range": "Melee",
+      "Damage": "d10+9",
+      "Burden": "2H",
+      "Feature": "Quick: When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Brass Knuckles",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+7",
+      "Burden": "1H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Scimitar",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d8+7",
+      "Burden": "1H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Twisted Dagger",
+      "Trait": "Knowledge",
+      "Range": "Melee",
+      "Damage": "d8+6",
+      "Burden": "1H",
+      "Feature": "Piercing: Damage dealt with this weapon treats the target's Major threshold as having a -2 penalty."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Whipsword",
+      "Trait": "Finesse",
+      "Range": "Very Close",
+      "Damage": "d8+6",
+      "Burden": "1H",
+      "Feature": "Versatile: This weapon can also be used with these statistics — Finesse, Melee, d10+6."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Rope Dart",
+      "Trait": "Instinct",
+      "Range": "Close",
+      "Damage": "d6+7",
+      "Burden": "2H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "3",
+      "Name": "Blitz Hammer",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d10+7",
+      "Burden": "2H",
+      "Feature": "Accelerator: Once per scene, mark a Stress to move to Far range then make an attack. Gain a +1 bonus to your Proficiency on this attack."
+    },
+    {
+      "Tier": "3",
+      "Name": "Platinum Estoc",
+      "Trait": "Finesse",
+      "Range": "Melee",
+      "Damage": "d8+7",
+      "Burden": "1H",
+      "Feature": "Piercing: Damage dealt with this weapon treats the target's Major threshold as having a -2 penalty."
+    },
+    {
+      "Tier": "3",
+      "Name": "Soldier's Pike",
+      "Trait": "Agility",
+      "Range": "Very Close",
+      "Damage": "d10+5",
+      "Burden": "2H",
+      "Feature": "Braced: When an adversary within this weapon's range deals damage to you, you can mark 2 Stress to force them to mark a Hit Point."
+    },
+    {
+      "Tier": "3",
+      "Name": "Chained Scythe",
+      "Trait": "Instinct",
+      "Range": "Very Close",
+      "Damage": "d10+5",
+      "Burden": "2H",
+      "Feature": "Quick: When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    {
+      "Tier": "3",
+      "Name": "Singing Sword",
+      "Trait": "Presence",
+      "Range": "Very Close",
+      "Damage": "d8+5",
+      "Burden": "1H",
+      "Feature": "Bolstering: When you critically succeed on an attack, all PCs within Close range gain a Hope."
+    },
+    {
+      "Tier": "3",
+      "Name": "Bladed Star",
+      "Trait": "Knowledge",
+      "Range": "Close",
+      "Damage": "d8+7",
+      "Burden": "1H",
+      "Feature": "Rebounding: When you throw this weapon, it returns to your hand. \nOn a failed attack, you can reroll your attack with disadvantage."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Katana",
+      "Trait": "Agility",
+      "Range": "Melee",
+      "Damage": "d10+12",
+      "Burden": "2H",
+      "Feature": "Quick: When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Brass Knuckles",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+10",
+      "Burden": "1H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Scimitar",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d8+10",
+      "Burden": "1H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Twisted Dagger",
+      "Trait": "Knowledge",
+      "Range": "Melee",
+      "Damage": "d8+9",
+      "Burden": "1H",
+      "Feature": "Piercing: Damage dealt with this weapon treats the target's Major threshold as having a -2 penalty."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Whipsword",
+      "Trait": "Finesse",
+      "Range": "Very Close",
+      "Damage": "d8+9",
+      "Burden": "1H",
+      "Feature": "Versatile: This weapon can also be used with these statistics — Finesse, Melee, d10+9."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Rope Dart",
+      "Trait": "Instinct",
+      "Range": "Close",
+      "Damage": "d6+10",
+      "Burden": "2H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "4",
+      "Name": "Severed Dragon Claw",
+      "Trait": "Instinct",
+      "Range": "Melee",
+      "Damage": "d10+11",
+      "Burden": "1H",
+      "Feature": "Destructive: -1 to Agility; on a successful attack, all adversaries within Very Close range must mark a Stress."
+    },
+    {
+      "Tier": "4",
+      "Name": "Infinite Staff",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d10+9",
+      "Burden": "2H",
+      "Feature": "Extending: You can increase the range of this weapon up to Very Far. \nYou gain a -1 penalty to attack rolls for each step you increase the range by (such as Melee to Very Close, Very Close to Close, or Close to Far)."
+    },
+    {
+      "Tier": "4",
+      "Name": "Bec de Corbin",
+      "Trait": "Agility",
+      "Range": "Very Close",
+      "Damage": "d10+9",
+      "Burden": "2H",
+      "Feature": "Devastating: Before you make an attack roll, you can mark a Stress to use a d20 as your damage die."
+    },
+    {
+      "Tier": "4",
+      "Name": "Black Powder Serpentine",
+      "Trait": "Strength",
+      "Range": "Far",
+      "Damage": "d8+12",
+      "Burden": "2H",
+      "Feature": "Incendiary: -1 to Agility; on a successful attack, all creatures within Very Close range of the target must mark a Hit Point."
+    },
+    {
+      "Tier": "4",
+      "Name": "Clockwork Crossbow",
+      "Trait": "Finesse",
+      "Range": "Far",
+      "Damage": "d6+11",
+      "Burden": "1H",
+      "Feature": "Quick: When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    {
+      "Tier": "4",
+      "Name": "Arquebus",
+      "Trait": "Knowledge",
+      "Range": "Far",
+      "Damage": "d8+10",
+      "Burden": "2H",
+      "Feature": "Reloading: After you make an attack, roll a d6. \nOn a result of 1, you must mark a Stress to reload this weapon before you can fire it again."
+    }
+  ],
+  "Consumables": [
+    {
+      "Roll": "1",
+      "Loot": "Warding Candle",
+      "Description": "You can light this candle to fill an area within Close range with a halo of light. \nA creature outside the halo can't enter it if they have ill intent toward a creature within it. \nThe candle burns for an hour."
+    },
+    {
+      "Roll": "2",
+      "Loot": "Iridian Dust",
+      "Description": "This multicolored powder sticks to everything and prevents creatures covered in it from becoming Hidden."
+    },
+    {
+      "Roll": "3",
+      "Loot": "Verglasian Seed",
+      "Description": "You can use this ice shard to instantly freeze an area of water up to Close range."
+    },
+    {
+      "Roll": "4",
+      "Loot": "Cupbearer's Bezoar",
+      "Description": "You can swallow this bezoar to become immune to poisons until your next long rest."
+    },
+    {
+      "Roll": "5",
+      "Loot": "Mossmantle Potion",
+      "Description": "You can drink this tea to perfectly blend into natural environments until your next rest."
+    },
+    {
+      "Roll": "6",
+      "Loot": "Lyrebird Lozenge",
+      "Description": "You can dissolve this lozenge in your mouth to perfectly mimic any voice you've heard until the end of the scene."
+    },
+    {
+      "Roll": "7",
+      "Loot": "Vial of Featherfall",
+      "Description": "You can drink this potion to ignore damage from falling for the next 10 minutes."
+    },
+    {
+      "Roll": "8",
+      "Loot": "Chimeric Saliva",
+      "Description": "You can apply this saliva to a weapon that deals physical damage to change its damage type to magic until your next rest."
+    },
+    {
+      "Roll": "9",
+      "Loot": "Packet of Space Dust",
+      "Description": "This dust causes anything it covers to become lighter than air. \nOne packet contains enough dust to cover the contents of a picnic basket, and the effects last for an hour."
+    },
+    {
+      "Roll": "10",
+      "Loot": "Pipeweed",
+      "Description": "When you choose the Clear Stress downtime move during a short rest, you can smoke this non-intoxicating leaf to clear an additional Stress. \nAny other PCs who chose the Clear Stress downtime move also gain this benefit."
+    },
+    {
+      "Roll": "11",
+      "Loot": "Deathseer's Powder",
+      "Description": "You can sprinkle this powder over a recently deceased corpse to conjure a spectral reprise of their final minute of life."
+    },
+    {
+      "Roll": "12",
+      "Loot": "Slayer's Salt",
+      "Description": "You can spread this salt in a line along windowsills or thresholds to create a magical barrier that undead creatures can't cross until the line is broken."
+    },
+    {
+      "Roll": "13",
+      "Loot": "Yakamel Milk",
+      "Description": "After consuming this milk, the next time you clear 1 or more Hit Points, you clear an additional Hit Point."
+    },
+    {
+      "Roll": "14",
+      "Loot": "Glowmoss Mushroom",
+      "Description": "You can break this mushroom into pieces, causing it to glow bright blue until your next long rest."
+    },
+    {
+      "Roll": "15",
+      "Loot": "Red Ooze Oil",
+      "Description": "You can coat your weapon in this oil. \nThe next successful attack you make with this weapon deals an extra 1d8 magic damage and temporarily Ignites the target. \nWhile Ignited, the target takes 1d4 magic damage when they take the spotlight."
+    },
+    {
+      "Roll": "16",
+      "Loot": "Instant Camp",
+      "Description": "You can unfold this small mechanical box into a camping tent large enough to safely house six people. \nThe tent collapses at the end of your next long rest."
+    },
+    {
+      "Roll": "17",
+      "Loot": "Bundle of Spiderlegs",
+      "Description": "You can eat these spiderlegs to walk on walls until your next rest."
+    },
+    {
+      "Roll": "18",
+      "Loot": "Ciscan Fog Bottle",
+      "Description": "You can break this jar to fill the area within Close range with magical mist. \nA creature who enters the mist clears a Stress and becomes Hidden."
+    },
+    {
+      "Roll": "19",
+      "Loot": "Snapthorn Seed",
+      "Description": "You can throw this seed at a point you can see. \nIt explodes into a tangle of binding vines that temporarily Restrains all creatures within Close range of that point."
+    },
+    {
+      "Roll": "20",
+      "Loot": "Sprite Bottle",
+      "Description": "When you mark your last Hit Point, this bottle shatters to release the Sprite inside. \nThe Sprite clears all your Hit Points before fading from the Mortal Realm."
+    },
+    {
+      "Roll": "21",
+      "Loot": "Gravity Bomb",
+      "Description": "You can throw this peach-sized mechanical orb at a point within Far range. \nIt implodes and pulls all creatures and objects within Close range of that point into Melee range with it."
+    },
+    {
+      "Roll": "22",
+      "Loot": "Gossip Flower",
+      "Description": "You can plant this seed in soil. \nIt instantly grows into a small flower that records everything it hears for up to one week. \nWhen plucked, the flower recites what it recorded in real time, then withers."
+    },
+    {
+      "Roll": "23",
+      "Loot": "Displacement Token",
+      "Description": "You can swallow this token to conjure two illusions of yourself that you can control. \nEach illusion lasts until it takes damage or until your next rest."
+    },
+    {
+      "Roll": "24",
+      "Loot": "Night Hag's Dust",
+      "Description": "You can blow this dust in an adversary's face to prevent them from clearing Stress until your next long rest."
+    },
+    {
+      "Roll": "25",
+      "Loot": "Self-Sewing Thread",
+      "Description": "You can use this thread to clear either a Hit Point or 2 Armor Slots."
+    },
+    {
+      "Roll": "26",
+      "Loot": "Stonemason's Fortune",
+      "Description": "When you throw this gray brick on the ground, it immediately grows into a 6-foot-tall, 10-foot-wide, and 2-foot-deep wall of solid stone."
+    },
+    {
+      "Roll": "27",
+      "Loot": "Mnemonic Potion",
+      "Description": "You can drink this potion to Utilize an Experience without spending a Hope."
+    },
+    {
+      "Roll": "28",
+      "Loot": "Salamander Salve",
+      "Description": "You can apply this salve to your skin to make yourself immune to heat until your next rest."
+    },
+    {
+      "Roll": "29",
+      "Loot": "Green Ooze Oil",
+      "Description": "You can coat your weapon in this oil. \nThe next successful attack you make with this weapon deals an extra 1d8 magic damage and temporarily Corrodes the target. \nWhile Corroded, the target gains a -2 penalty to their damage thresholds."
+    },
+    {
+      "Roll": "30",
+      "Loot": "Sunlight Orb",
+      "Description": "You can shatter this orb to make the area within Very Far range appear as though it's sunlit daytime for the next 24 hours."
+    },
+    {
+      "Roll": "31",
+      "Loot": "Moonlight Orb",
+      "Description": "You can shatter this orb to make the area within Very Far range appear as though it's moonlit nighttime for the next 24 hours."
+    },
+    {
+      "Roll": "32",
+      "Loot": "Midas Flask",
+      "Description": "You can pour this small flask of alchemical liquid over a mundane item to instantly transmute it into a handful of gold."
+    },
+    {
+      "Roll": "33",
+      "Loot": "Staff of Reversal",
+      "Description": "You can break this staff against the ground to reverse one magical transformation or effect within Far range."
+    },
+    {
+      "Roll": "34",
+      "Loot": "Berserker's Brew",
+      "Description": "When you drink this dram of liquid, you gain a bonus to your Strength and a penalty to your Finesse and Knowledge equal to your Instinct (minimum 1). \nThis effect lasts until you make a death move or until your next rest."
+    },
+    {
+      "Roll": "35",
+      "Loot": "Emberite Shard",
+      "Description": "Choose a point within Far range. \nAll targets within Close range of that point must succeed on a Reaction Roll (16) or take 3d6 magic damage and become temporarily Ablaze. \nWhile Ablaze, a creature must roll a d4 whenever they make an action roll. \nOn a result of 1, they mark a Hit Point. \nOn a result of 4, they clear the Ablaze condition."
+    },
+    {
+      "Roll": "36",
+      "Loot": "Arcticite Shard",
+      "Description": "Choose a point within Far range. \nAll targets within Close range of that point must succeed on a Reaction Roll (16) or take 3d6 magic damage and become temporarily Restrained by ice."
+    },
+    {
+      "Roll": "37",
+      "Loot": "Fulgurite Shard",
+      "Description": "Choose a point within Far range. \nAll targets within Close range of that point must succeed on a Reaction Roll (16) or take 3d6 magic damage and mark 1d4 Stress as lightning crackles through the area."
+    },
+    {
+      "Roll": "38",
+      "Loot": "Demiurge's Draught",
+      "Description": "You can drink this draught to gain a +1 bonus to your Proficiency for your next successful attack roll."
+    },
+    {
+      "Roll": "39",
+      "Loot": "Cockerel Claw Tea",
+      "Description": "You can drink this tea to refresh your features as if you had taken a long rest."
+    },
+    {
+      "Roll": "40",
+      "Loot": "Potion of Vigilance",
+      "Description": "You can drink this potion to gain a +1 bonus to your Evasion until you mark a Hit Point."
+    },
+    {
+      "Roll": "41",
+      "Loot": "Cacophonous Concoction",
+      "Description": "When you drink this potion, anything you say or do in the next hour becomes impossible for a witness to recount. \nAny attempts they make to communicate what they saw, heard, or otherwise sensed comes out garbled or nonsensical."
+    },
+    {
+      "Roll": "42",
+      "Loot": "Nightmare Mead",
+      "Description": "You can drink this potion to discover the deepest fear of the next person you make eye contact with. \nWhen you do, the GM gains a Fear."
+    },
+    {
+      "Roll": "43",
+      "Loot": "Stake of Abjuration",
+      "Description": "You can hammer this stake into the ground and make a proclamation. \nUntil your next rest, a creature within Far range of the stake who transgresses that proclamation must mark a Stress. \nThe stake lasts until your next rest, then it shatters."
+    },
+    {
+      "Roll": "44",
+      "Loot": "Psychopomp's Shroud",
+      "Description": "You can place this shroud over the corpse of a recently deceased creature. \nThe creature's spirit enters the shroud and becomes your spectral assistant until the next sunrise, when they pass through the veil of death and take the shroud with them."
+    },
+    {
+      "Roll": "45",
+      "Loot": "Phial of Deep Ink",
+      "Description": "You can drink this bottle of ink to transform into a cephalopod of roughly your size for the next hour. \nYou gain rubbery skin, soft bones, the ability to breathe underwater, and new limbs until you have eight total."
+    },
+    {
+      "Roll": "46",
+      "Loot": "Mesmer's Tonic",
+      "Description": "When you drink this tonic, the only thing you can hear until your next rest are the surface thoughts of creatures within Very Close range."
+    },
+    {
+      "Roll": "47",
+      "Loot": "Invisibility Potion",
+      "Description": "You are Hidden until you deal damage to another creature or until your next rest."
+    },
+    {
+      "Roll": "48",
+      "Loot": "Formoid Serum",
+      "Description": "You can drink this potion to become a swarm of 16 million ants until the end of the scene. \nYou keep and have access to all equipment, loot, and features."
+    },
+    {
+      "Roll": "49",
+      "Loot": "Steelskin Salve",
+      "Description": "You can apply this salve to your skin to gain a bonus to your damage thresholds equal to your tier until the end of the scene."
+    },
+    {
+      "Roll": "50",
+      "Loot": "Godling's Pomelo",
+      "Description": "You can eat this citrus fruit to clear all Hit Points and Stress."
+    },
+    {
+      "Roll": "51",
+      "Loot": "Snakeskin Spirit",
+      "Description": "You can drink this potion to slough off your outer layer of skin and heal a scar."
+    },
+    {
+      "Roll": "52",
+      "Loot": "Magic-User's Malison",
+      "Description": "When you release this spellcaster's trapped soul, you can cast one spell from a card in your vault as if it were in your loadout. \nThis doesn't work for permanently vaulted cards."
+    },
+    {
+      "Roll": "53",
+      "Loot": "Quintessential Severant",
+      "Description": "You can use this magic blade to cut one magical or metaphysical bond, such as an enchantment, contract, magical tether, or divine oath. \nWhen you do, the blade shatters."
+    },
+    {
+      "Roll": "54",
+      "Loot": "Mask of the Echoed Self",
+      "Description": "You can wear this mask during your next level up to swap the values of any of your traits. \nWhen you do, the mask becomes your permanent face."
+    },
+    {
+      "Roll": "55",
+      "Loot": "Necroprancer's Bell",
+      "Description": "You can break this rusted, clapperless bell against the ground to summon a skeletal steed that climbs out of the earth and serves you until the next sunrise."
+    },
+    {
+      "Roll": "56",
+      "Loot": "Drakemantle",
+      "Description": "You can use this enchanted ancient dragon hide to gain draconic characteristics until the end of the scene, when the hide falls aways in tatters. \nUntil then, you can fly and gain a +5 bonus to your damage thresholds and a +1 bonus to your Proficiency."
+    },
+    {
+      "Roll": "57",
+      "Loot": "Gambler's Fallacy",
+      "Description": "You can spend any number of handfuls of gold by placing them into this slotted ceramic jar shaped like a pig. \nWhen you throw the jar at a point within Far range, it explodes and deals 1d20 magic damage for each handful of gold spent to all creatures within Close range of that point. \nAll gold within the jar is destroyed."
+    },
+    {
+      "Roll": "58",
+      "Loot": "Lionheart Tonic",
+      "Description": "You can drink this tonic to gain a +1 bonus to your Proficiency until you roll with Fear."
+    },
+    {
+      "Roll": "59",
+      "Loot": "Tears of the Undying Hero",
+      "Description": "When you drink this potion, death can't touch you until your next long rest. \nWhen you would mark your last Hit Point, instead of making a death move, you make one final action roll before falling into a dreamless slumber until an ally chooses the Tend to Wounds downtime move to clear your Hit Points."
+    },
+    {
+      "Roll": "60",
+      "Loot": "Featherstep Potion",
+      "Description": "You can drink this potion to sprout small wings from your ankles that give you a bonus to your Evasion equal to your tier until your next rest."
+    }
+  ],
+  "Secondary": [
+    {
+      "Tier": "1",
+      "Name": "Hatchet",
+      "Trait": "Agility",
+      "Range": "Melee",
+      "Damage": "d8",
+      "Burden": "1H",
+      "Feature": "Follow-Up: On a successful attack with your primary weapon within Melee range, you can mark a Stress to gain a +1 bonus to your Proficiency for this attack."
+    },
+    {
+      "Tier": "1",
+      "Name": "Offhand Brass Knuckles",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8",
+      "Burden": "1H",
+      "Feature": "Paired: +2 to primary weapon damage to targets within Melee range"
+    },
+    {
+      "Tier": "1",
+      "Name": "Throwing Knives",
+      "Trait": "Finesse",
+      "Range": "Melee",
+      "Damage": "d8",
+      "Burden": "1H",
+      "Feature": "Stockpiled: You can throw this weapon within Close range by making an attack roll using Finesse. \nYou don't have to retrieve it, as you always have another on hand."
+    },
+    {
+      "Tier": "1",
+      "Name": "Fighting Cloak",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d4",
+      "Burden": "1H",
+      "Feature": "Padded: +2 to damage thresholds"
+    },
+    {
+      "Tier": "1",
+      "Name": "Rune Shield",
+      "Trait": "Knowledge",
+      "Range": "Melee",
+      "Damage": "d4",
+      "Burden": "1H",
+      "Feature": "Protective: +1 to Armor Score"
+    },
+    {
+      "Tier": "1",
+      "Name": "Focus Runes",
+      "Trait": "Instinct",
+      "Range": "Very Close",
+      "Damage": "d6",
+      "Burden": "1H",
+      "Feature": "Focused: +1 to primary weapon damage to targets within Very Close range"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Hatchet",
+      "Trait": "Agility",
+      "Range": "Melee",
+      "Damage": "d8+2",
+      "Burden": "1H",
+      "Feature": "Follow-Up: On a successful attack with your primary weapon within Melee range, you can mark a Stress to gain a +1 bonus to your Proficiency for this attack."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Offhand Brass Knuckles",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+2",
+      "Burden": "1H",
+      "Feature": "Paired: +3 to primary weapon damage to targets within Melee range"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Throwing Knives",
+      "Trait": "Finesse",
+      "Range": "Melee",
+      "Damage": "d8+2",
+      "Burden": "1H",
+      "Feature": "Stockpiled: You can throw this weapon within Close range by making an attack roll using Finesse. \nYou don't have to retrieve it, as you always have another on hand."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Fighting Cloak",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d4+2",
+      "Burden": "1H",
+      "Feature": "Padded: +3 to damage thresholds"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Rune Shield",
+      "Trait": "Knowledge",
+      "Range": "Melee",
+      "Damage": "d4+2",
+      "Burden": "1H",
+      "Feature": "Protective: +2 to Armor Score"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Focus Runes",
+      "Trait": "Instinct",
+      "Range": "Very Close",
+      "Damage": "d6+2",
+      "Burden": "1H",
+      "Feature": "Focused: +1 to primary weapon damage to targets within Very Close range"
+    },
+    {
+      "Tier": "2",
+      "Name": "Collapsible Baton",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8",
+      "Burden": "1H",
+      "Feature": "Nonlethal: When a target would mark any number of Hit Points from an attack with this weapon, they mark an equal number of Stress instead."
+    },
+    {
+      "Tier": "2",
+      "Name": "Eldritch Vambrace",
+      "Trait": "Instinct",
+      "Range": "Melee",
+      "Damage": "d8",
+      "Burden": "1H",
+      "Feature": "Deflecting: When you are attacked, you can mark an Armor Slot to gain a bonus to your Evasion equal to your Armor Score against the attack."
+    },
+    {
+      "Tier": "2",
+      "Name": "Segmented Staff",
+      "Trait": "Agility",
+      "Range": "Very Close",
+      "Damage": "d6+4",
+      "Burden": "1H",
+      "Feature": "Double Duty: +1 to Armor Score; +1 to primary weapon damage within Melee range"
+    },
+    {
+      "Tier": "2",
+      "Name": "Razor Wire",
+      "Trait": "Finesse",
+      "Range": "Very Close",
+      "Damage": "d6+3",
+      "Burden": "1H",
+      "Feature": "Entangling: On a successful attack with your primary weapon against a target within Very Close range, you can spend a Hope to make the target temporarily Vulnerable."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Hatchet",
+      "Trait": "Agility",
+      "Range": "Melee",
+      "Damage": "d8+4",
+      "Burden": "1H",
+      "Feature": "Follow-Up: On a successful attack with your primary weapon within Melee range, you can mark a Stress to gain a +1 bonus to your Proficiency for this attack."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Offhand Brass Knuckles",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+4",
+      "Burden": "1H",
+      "Feature": "Paired: +4 to primary weapon damage to targets within Melee range"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Throwing Knives",
+      "Trait": "Finesse",
+      "Range": "Melee",
+      "Damage": "d8+4",
+      "Burden": "1H",
+      "Feature": "Stockpiled: You can throw this weapon within Close range by making an attack roll using Finesse. \nYou don't have to retrieve it, as you always have another on hand."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Fighting Cloak",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d4+4",
+      "Burden": "1H",
+      "Feature": "Padded: +4 to damage thresholds"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Rune Shield",
+      "Trait": "Knowledge",
+      "Range": "Melee",
+      "Damage": "d4+4",
+      "Burden": "1H",
+      "Feature": "Protective: +3 to Armor Score"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Focus Runes",
+      "Trait": "Instinct",
+      "Range": "Very Close",
+      "Damage": "d6+4",
+      "Burden": "1H",
+      "Feature": "Focused: +1 to primary weapon damage to targets within Very Close range"
+    },
+    {
+      "Tier": "3",
+      "Name": "Tinker's Hammer",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+4",
+      "Burden": "1H",
+      "Feature": "Trusty: +1 to attack rolls made with your primary weapon"
+    },
+    {
+      "Tier": "3",
+      "Name": "Vorpal Shard",
+      "Trait": "Knowledge",
+      "Range": "Melee",
+      "Damage": "d4",
+      "Burden": "1H",
+      "Feature": "Targeted: When you fail a weapon attack, you can spend a Hope to succeed on your next weapon attack."
+    },
+    {
+      "Tier": "3",
+      "Name": "Soul Chain",
+      "Trait": "Presence",
+      "Range": "Very Close",
+      "Damage": "d6+5",
+      "Burden": "1H",
+      "Feature": "Draining: On a successful attack, you can spend a Hope to force the target to mark a Stress. \nIf they do, you clear a Stress."
+    },
+    {
+      "Tier": "3",
+      "Name": "War Dart",
+      "Trait": "Agility",
+      "Range": "Far",
+      "Damage": "d6+5",
+      "Burden": "1H",
+      "Feature": "Versatile: This weapon can also be used with these statistics - Agility, Melee, d8+5."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Hatchet",
+      "Trait": "Agility",
+      "Range": "Melee",
+      "Damage": "d8+6",
+      "Burden": "1H",
+      "Feature": "Follow-Up: On a successful attack with your primary weapon within Melee range, you can mark a Stress to gain a +1 bonus to your Proficiency for this attack."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Offhand Brass Knuckles",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+6",
+      "Burden": "1H",
+      "Feature": "Paired: +5 to primary weapon damage to targets within Melee range"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Throwing Knives",
+      "Trait": "Finesse",
+      "Range": "Melee",
+      "Damage": "d8+6",
+      "Burden": "1H",
+      "Feature": "Stockpiled: You can throw this weapon within Close range by making an attack roll using Finesse. \nYou don't have to retrieve it, as you always have another on hand."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Fighting Cloak",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d4+6",
+      "Burden": "1H",
+      "Feature": "Padded: +5 to damage thresholds"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Rune Shield",
+      "Trait": "Knowledge",
+      "Range": "Melee",
+      "Damage": "d4+6",
+      "Burden": "1H",
+      "Feature": "Protective: +4 to Armor Score"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Focus Runes",
+      "Trait": "Instinct",
+      "Range": "Very Close",
+      "Damage": "d6+6",
+      "Burden": "1H",
+      "Feature": "Focused: +1 to primary weapon damage to targets within Very Close range"
+    },
+    {
+      "Tier": "4",
+      "Name": "Void Needle",
+      "Trait": "Finesse",
+      "Range": "Melee",
+      "Damage": "d4+6",
+      "Burden": "1H",
+      "Feature": "Inverted: When you roll a weapon attack with Fear, you gain a Hope."
+    },
+    {
+      "Tier": "4",
+      "Name": "Echo Blade",
+      "Trait": "Presence",
+      "Range": "Melee",
+      "Damage": "d4+6",
+      "Burden": "1H",
+      "Feature": "Doubled Up: When you succeed on an attack with your primary weapon, you can deal damage to another target within Melee range."
+    },
+    {
+      "Tier": "4",
+      "Name": "Möbius Orb",
+      "Trait": "Knowledge",
+      "Range": "Melee",
+      "Damage": "d8+6",
+      "Burden": "1H",
+      "Feature": "Recursive: When you roll the maximum value on a damage die, roll an additional damage die and add the result to the total damage. \nThis feature can trigger repeatedly."
+    },
+    {
+      "Tier": "4",
+      "Name": "Blackblood Tendril",
+      "Trait": "Instinct",
+      "Range": "Close",
+      "Damage": "d6+8",
+      "Burden": "1H",
+      "Feature": "Poisonous: When a target marks any number of Hit Points from an attack you rolled with Fear, they mark an equal number of Stress."
+    }
+  ]
+}

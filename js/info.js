@@ -93,8 +93,8 @@ Shop Generator
 
     content: `Content
     
-    All content from the base game is included in the generators by default.    
-    You can customize the included content by checking the boxes.
+    All content from the Base Game and Expansions are enabled by default.    
+    You can customize the included content by checking/unchecking the boxes.
         
     Not all campaign frames contain additional content.
     Only campaign frames with stat blocked items are included here.

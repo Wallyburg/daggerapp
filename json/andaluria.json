@@ -1,0 +1,308 @@
+{
+  "Physical": [
+    {
+      "Tier": "1",
+      "Name": "Blessed Brass Knuckles",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+1 mag",
+      "Burden": "1H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "1",
+      "Name": "Holy Shotgun",
+      "Trait": "Agility",
+      "Range": "Very Close",
+      "Damage": "d6+2 mag",
+      "Burden": "2H",
+      "Feature": "Scattershot: When you make an attack, target all creatures in front of you within range."
+    },
+    {
+      "Tier": "1",
+      "Name": "Repeating Crossbow",
+      "Trait": "Finesse",
+      "Range": "Far",
+      "Damage": "d6+2 phy",
+      "Burden": "2H",
+      "Feature": "Quick: When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Blessed Brass Knuckles",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+4 mag",
+      "Burden": "1H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Holy Shotgun",
+      "Trait": "Agility",
+      "Range": "Very Close",
+      "Damage": "d6+5 mag",
+      "Burden": "2H",
+      "Feature": "Scattershot: When you make an attack, target all creatures in front of you within range."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Repeating Crossbow",
+      "Trait": "Finesse",
+      "Range": "Far",
+      "Damage": "d6+5 phy",
+      "Burden": "2H",
+      "Feature": "Quick: When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Blessed Brass Knuckles",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+7 mag",
+      "Burden": "1H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Holy Shotgun",
+      "Trait": "Agility",
+      "Range": "Very Close",
+      "Damage": "d6+8 mag",
+      "Burden": "2H",
+      "Feature": "Scattershot: When you make an attack, target all creatures in front of you within range."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Repeating Crossbow",
+      "Trait": "Finesse",
+      "Range": "Far",
+      "Damage": "d6+8 phy",
+      "Burden": "2H",
+      "Feature": "Quick: When you make an attack, you can mark a Stress to target another creature within range."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Blessed Brass Knuckles",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+10 mag",
+      "Burden": "1H",
+      "Feature": "Mundane: No additional properties"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Holy Shotgun",
+      "Trait": "Agility",
+      "Range": "Very Close",
+      "Damage": "d6+11 mag",
+      "Burden": "2H",
+      "Feature": "Scattershot: When you make an attack, target all creatures in front of you within range."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Repeating Crossbow",
+      "Trait": "Finesse",
+      "Range": "Far",
+      "Damage": "d6+11 phy",
+      "Burden": "2H",
+      "Feature": "Quick: When you make an attack, you can mark a Stress to target another creature within range."
+    }
+  ],
+  "Secondary": [
+    {
+      "Tier": "1",
+      "Name": "Wooden Stake",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8 phy",
+      "Burden": "1H",
+      "Feature": "Paired: Gain a bonus equal to 1 + your tier to primary weapon damage to targets within Melee range."
+    },
+    {
+      "Tier": "1",
+      "Name": "Hallowed Shield",
+      "Trait": "Instinct",
+      "Range": "Melee",
+      "Damage": "d4 mag",
+      "Burden": "1H",
+      "Feature": "Resonant: When you critically succeed on a primary weapon attack, you gain an additional Hope."
+    },
+    {
+      "Tier": "1",
+      "Name": "Chain Whip",
+      "Trait": "Presence",
+      "Range": "Very Close",
+      "Damage": "d6+1 phy",
+      "Burden": "1H",
+      "Feature": "Hooked: On a successful attack, you can pull the target into Melee range."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Wooden Stake",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+2 phy",
+      "Burden": "1H",
+      "Feature": "Paired: Gain a bonus equal to 1 + your tier to primary weapon damage to targets within Melee range."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Hallowed Shield",
+      "Trait": "Instinct",
+      "Range": "Melee",
+      "Damage": "d4+2 mag",
+      "Burden": "1H",
+      "Feature": "Resonant: When you critically succeed on a primary weapon attack, you gain an additional Hope."
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Chain Whip",
+      "Trait": "Presence",
+      "Range": "Very Close",
+      "Damage": "d6+3 phy",
+      "Burden": "1H",
+      "Feature": "Hooked: On a successful attack, you can pull the target into Melee range."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Wooden Stake",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+4 phy",
+      "Burden": "1H",
+      "Feature": "Paired: Gain a bonus equal to 1 + your tier to primary weapon damage to targets within Melee range."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Hallowed Shield",
+      "Trait": "Instinct",
+      "Range": "Melee",
+      "Damage": "d4+4 mag",
+      "Burden": "1H",
+      "Feature": "Resonant: When you critically succeed on a primary weapon attack, you gain an additional Hope."
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Chain Whip",
+      "Trait": "Presence",
+      "Range": "Very Close",
+      "Damage": "d6+5 phy",
+      "Burden": "1H",
+      "Feature": "Hooked: On a successful attack, you can pull the target into Melee range."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Wooden Stake",
+      "Trait": "Strength",
+      "Range": "Melee",
+      "Damage": "d8+6 phy",
+      "Burden": "1H",
+      "Feature": "Paired: Gain a bonus equal to 1 + your tier to primary weapon damage to targets within Melee range."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Hallowed Shield",
+      "Trait": "Instinct",
+      "Range": "Melee",
+      "Damage": "d4+6 mag",
+      "Burden": "1H",
+      "Feature": "Resonant: When you critically succeed on a primary weapon attack, you gain an additional Hope."
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Chain Whip",
+      "Trait": "Presence",
+      "Range": "Very Close",
+      "Damage": "d6+7 phy",
+      "Burden": "1H",
+      "Feature": "Hooked: On a successful attack, you can pull the target into Melee range."
+    }
+  ],
+  "Armor": [
+    {
+      "Tier": "1",
+      "Name": "Coffinwood Armor",
+      "Feature": "Splintering: Gain a bonus to your damage thresholds equal to your unmarked Armor Slots.",
+      "Thresholds": "4 / 10",
+      "Score": "3"
+    },
+    {
+      "Tier": "1",
+      "Name": "Leather Longcoat",
+      "Feature": "Quiet: Gain a +2 bonus to rolls you make to move silently.",
+      "Thresholds": "5 / 12",
+      "Score": "3"
+    },
+    {
+      "Tier": "1",
+      "Name": "Silverweave Armor",
+      "Feature": "Warded: You reduce incoming magic damage by your Armor Score before applying it to your damage thresholds.",
+      "Thresholds": "5 / 11",
+      "Score": "3"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Coffinwood Armor",
+      "Feature": "Splintering: Gain a bonus to your damage thresholds equal to your unmarked Armor Slots.",
+      "Thresholds": "6 / 15",
+      "Score": "4"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Leather Longcoat",
+      "Feature": "Quiet: Gain a +2 bonus to rolls you make to move silently.",
+      "Thresholds": "8 / 18",
+      "Score": "4"
+    },
+    {
+      "Tier": "2",
+      "Name": "Improved Silverweave Armor",
+      "Feature": "Warded: You reduce incoming magic damage by your Armor Score before applying it to your damage thresholds.",
+      "Thresholds": "7 / 16",
+      "Score": "4"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Coffinwood Armor",
+      "Feature": "Splintering: Gain a bonus to your damage thresholds equal to your unmarked Armor Slots.",
+      "Thresholds": "8 / 22",
+      "Score": "5"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Leather Longcoat",
+      "Feature": "Quiet: Gain a +2 bonus to rolls you make to move silently.",
+      "Thresholds": "10 / 25",
+      "Score": "5"
+    },
+    {
+      "Tier": "3",
+      "Name": "Advanced Silverweave Armor",
+      "Feature": "Warded: You reduce incoming magic damage by your Armor Score before applying it to your damage thresholds.",
+      "Thresholds": "9 / 23",
+      "Score": "5"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Coffinwood Armor",
+      "Feature": "Splintering: Gain a bonus to your damage thresholds equal to your unmarked Armor Slots.",
+      "Thresholds": "10 / 31",
+      "Score": "6"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Leather Longcoat",
+      "Feature": "Quiet: Gain a +2 bonus to rolls you make to move silently.",
+      "Thresholds": "12 / 34",
+      "Score": "6"
+    },
+    {
+      "Tier": "4",
+      "Name": "Legendary Silverweave Armor",
+      "Feature": "Warded: You reduce incoming magic damage by your Armor Score before applying it to your damage thresholds.",
+      "Thresholds": "11 / 32",
+      "Score": "6"
+    }
+  ]
+}

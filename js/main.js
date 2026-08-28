@@ -16,17 +16,16 @@ const activeData = {
   Consumables: []
 };
 
-// Content pack registry
+// Content pack registry (Line 40 in index.html)
 const contentPacks = {
   baseGame: {
     checkboxId: 'baseGame-json',
     url: 'json/baseGame.json'
   },
-/*  hopeFear: {
+  hopeFear: {
     checkboxId: 'hopeFear-json',
     url: 'json/hopeFear.json'
   },
-*/ //Remove block comment from hopeFear after go-live. See line 63 in index.html
   beastFeast: {
     checkboxId: 'beastFeast-json',
     url: 'json/beastFeast.json'
@@ -34,6 +33,10 @@ const contentPacks = {
   drylands: {
     checkboxId: 'drylands-json',
     url: 'json/drylands.json'
+  },
+  andaluria: {
+    checkboxId: 'andaluria-json',
+    url: 'json/andaluria.json'
   }
 };
 
